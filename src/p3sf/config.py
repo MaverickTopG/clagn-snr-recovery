@@ -1,12 +1,20 @@
-"""Validated loader for the frozen analysis configuration.
+"""Validated loaders for the analysis configuration.
 
-No script in this project may hardcode an analysis constant. Everything that
-could change a result lives in ``00_admin/frozen_config.yaml`` and is read
-through :func:`load_config`.
+Two configurations exist and they are not interchangeable.
 
-Once ``frozen: true`` is set (by ``29_locked_validation.py``), any further
-change to the file must be accompanied by an entry in
-``00_admin/decisions_log.md``.
+``00_admin/original_prospective_config_2026-08-14.yaml`` is the plan written
+before the experiment ran. ``00_admin/frozen_config.yaml`` is a working copy of
+it and is what the pipeline loads: the validators and the directory discovery in
+:func:`project_root` were built against its schema. It still describes grids the
+final paper does not report, including the host-fraction experiment that was
+later abandoned.
+
+``00_admin/final_paper3_analysis_config.yaml`` describes the analysis the paper
+actually reports. It is read by :func:`load_final_paper_config` and is the file
+to consult for any published quantity.
+
+Material differences between the two are listed in
+``00_admin/PROTOCOL_DEVIATIONS.md``.
 """
 
 from __future__ import annotations
@@ -222,14 +230,18 @@ class Config(_Base):
         if len(self.primary_contrasts) != 3:
             raise ValueError(
                 "exactly three primary contrasts are preregistered; "
-                "adding a fourth requires a decisions_log.md entry and a config_version bump"
+                "adding a fourth requires a config_version bump"
             )
         return self
 
 
 @functools.lru_cache(maxsize=8)
 def load_config(path: str | Path | None = None) -> Config:
-    """Load, validate, and checksum the frozen configuration.
+    """Load, validate and checksum the *prospective* configuration.
+
+    This is the plan as written before the experiment ran, and it is what the
+    pipeline consumes. For any quantity reported in the paper use
+    :func:`load_final_paper_config` instead.
 
     Cached, so repeated calls inside one process return an identical object.
     """
@@ -242,4 +254,32 @@ def load_config(path: str | Path | None = None) -> Config:
     return Config.model_validate(payload)
 
 
-__all__ = ["Config", "load_config", "project_root", "DEFAULT_CONFIG_PATH"]
+FINAL_PAPER_CONFIG_PATH = "00_admin/final_paper3_analysis_config.yaml"
+
+
+def load_final_paper_config(path: str | Path | None = None) -> dict[str, Any]:
+    """Load the configuration describing the analysis reported in the paper.
+
+    Returned as a plain mapping rather than a :class:`Config`. The two files
+    have different schemas, and validating this one against the prospective
+    model would require it to declare grids the paper does not report.
+    """
+    resolved = Path(path) if path is not None else project_root() / FINAL_PAPER_CONFIG_PATH
+    payload: dict[str, Any] = yaml.safe_load(resolved.resolve().read_bytes())
+    if payload.get("status") != "final_paper_analysis":
+        raise ValueError(f"{resolved} is not the final paper configuration")
+    return payload
+
+
+#: Explicit alias. ``load_config`` reads the prospective plan, not the paper.
+load_prospective_config = load_config
+
+__all__ = [
+    "Config",
+    "DEFAULT_CONFIG_PATH",
+    "FINAL_PAPER_CONFIG_PATH",
+    "load_config",
+    "load_final_paper_config",
+    "load_prospective_config",
+    "project_root",
+]

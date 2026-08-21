@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+title: Spectroscopic Recovery of Changing-Look AGN
+version: 1.0.0
+abstract: >-
+  Analysis code for a counterfactual experiment measuring how spectroscopic
+  signal-to-noise and the operational classification protocol affect recovery of
+  58 published changing-look AGN transitions.
+authors:
+  - family-names: Singh
+    given-names: Ayansh
+    affiliation: "Redwood High School, Larkspur, CA 94939, USA"
+license: MIT
+repository-code: "https://github.com/MaverickTopG/clagn-snr-recovery"
+keywords:
+  - changing-look AGN
+  - active galactic nuclei
+  - spectroscopy
+  - selection effects
+  - reproducible research
+references:
+  - type: data
+    title: >-
+      Reproducibility Dataset for: Signal-to-Noise and Classification Protocols
+      Shape the Spectroscopic Recovery of Changing-Look AGN
+    authors:
+      - family-names: Singh
+        given-names: Ayansh
+    doi: 10.5281/zenodo.22022007
+    year: 2026
+preferred-citation:
+  type: article
+  title: >-
+    Signal-to-Noise and Classification Protocols Shape the Spectroscopic
+    Recovery of Changing-Look AGN
+  authors:
+    - family-names: Singh
+      given-names: Ayansh
+  year: 2026

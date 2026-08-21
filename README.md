@@ -44,17 +44,43 @@ PyQSOFit revision, which is not redistributed here. Both are required before the
 
 ## Reproduction
 
-Download the dataset above and place its tables where the scripts expect them, then:
+The frozen result tables are in this repository, so the analyses that summarize them run
+without downloading anything:
 
 ```
-uv run python 00_scripts/34_execute_full_q1.py
 uv run python 00_scripts/35_analyze_full_q1.py
 uv run python 00_scripts/36_d095_q1_scientific_stress_test.py
 uv run python 00_scripts/37_d099_transition_level_disagreement.py
+uv run python 00_scripts/40_d100_referee_stratifications.py
 ```
 
-The production step reruns 8412 spectral fits and takes many hours. The later scripts read
-stored outputs and finish in minutes.
+These read `05_analysis/q1_production/` and write to `05_analysis/derived/`. They finish in
+minutes and reproduce every number the paper reports.
+
+Two things are deliberately not shipped, and each is needed only for a fuller rerun.
+
+**Per-spectrum fit results** (`spectrum_fit_results_d094.parquet`, 674 MB) back the Green
+decomposition audit and the raw-product checksum test. Both are skipped when it is absent.
+Retrieve it from the dataset and place it at:
+
+```
+05_analysis/q1_production/d094/raw/spectrum_fit_results_d094.parquet
+```
+
+**Survey spectra** are needed only to rerun the 8412-fit production campaign
+(`00_scripts/34_execute_full_q1.py`, many hours). They are not redistributed. Retrieve each from
+its originating archive using the identifiers in
+`05_analysis/q1_production/d094/raw/endpoint_bindings_d094.csv`, which gives the survey, the
+spectrum identifier and the expected SHA-256 for all 116 endpoints, then place them under:
+
+```
+03_spectra/raw_q1_d093/{sdss_legacy,sdssv_dr19,lamost_dr11,desi_edr}/
+```
+
+| Zenodo file | Repository destination |
+|---|---|
+| `spectrum_fit_results_d094.parquet` | `05_analysis/q1_production/d094/raw/` |
+| everything else | already present in this repository |
 
 ## Tests
 
@@ -70,8 +96,21 @@ Runs the test suite, `ruff`, `mypy`, and an environment check.
 |---|---|
 | `src/p3sf/` | Analysis package: spectral access, degradation operator, fitting drivers, classification protocols, statistics |
 | `00_scripts/` | Numbered pipeline stages, run in order |
+| `00_admin/` | Analysis configuration and provenance records |
+| `01_literature/` | Published thresholds transcribed with citations |
+| `04_reference_sample/` | Reference-sample screening tables |
+| `05_analysis/` | Frozen design, production and result tables |
 | `tests/` | Test suite |
-| `config/` | PyQSOFit line-parameter file |
+
+## Analysis provenance
+
+The prospective plan written before the experiment ran is preserved unchanged in
+`00_admin/original_preregistered_analysis_2026-08-14.md`, alongside its configuration. The
+analysis actually reported in the paper is described by
+`00_admin/final_paper3_analysis_config.yaml`. Where the two differ — the abandoned host-fraction
+experiment, the expanded reference sample, the final S/N grid, and an independent second
+adjudication that was planned but not performed — the differences and their timing are set out in
+`00_admin/PROTOCOL_DEVIATIONS.md`. This release corresponds to the final paper analysis.
 
 ## Citation
 
@@ -89,6 +128,7 @@ Please cite both the paper and the dataset:
 
 ## License
 
-MIT for the code in this repository; see `LICENSE`. Survey data products remain subject to the
-terms of the originating archives, and third-party dependencies remain under their own
-licenses.
+- **Code:** MIT, see `LICENSE`.
+- **Author-generated derived tables:** CC BY 4.0, see `DATA_LICENSE.md`.
+- **Survey products and third-party software:** original terms apply. No survey spectrum is
+  redistributed here, and PyQSOFit is GPL-3.0 and cloned from upstream rather than included.

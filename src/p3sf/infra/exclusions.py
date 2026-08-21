@@ -84,7 +84,7 @@ def record_exclusions(
     if unknown:
         raise ValueError(
             f"unknown exclusion reason code(s): {unknown}. "
-            "Add them to 00_admin/exclusion_reason_codes.yaml with a decisions_log.md entry."
+            "Add them to 00_admin/exclusion_reason_codes.yaml."
         )
 
     target = path or log_path()

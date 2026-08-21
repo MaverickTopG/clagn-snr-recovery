@@ -1,7 +1,6 @@
-Copyright (c) 2026 Ayansh Singh
+MIT License
 
-ORIGINAL ANALYSIS CODE IN THIS PACKAGE IS LICENSED UNDER THE MIT LICENSE
-========================================================================
+Copyright (c) 2026 Ayansh Singh
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -20,26 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-
-DERIVED DATA TABLES IN THIS PACKAGE ARE LICENSED UNDER CC BY 4.0
-================================================================
-
-The derived data products of this work -- the reference manifest, endpoint
-bindings, condition matrix, transition-level estimands, aggregate tables,
-stored classification outcomes, and provenance records under data/ -- are
-licensed under the Creative Commons Attribution 4.0 International License
-(CC BY 4.0), <https://creativecommons.org/licenses/by/4.0/>.
-
-
-WHAT THIS LICENSE DOES NOT COVER
-================================
-
-Survey data products and identifiers originating from SDSS, SDSS-V, LAMOST and
-DESI remain subject to those collaborations' own terms and are not relicensed
-here. No survey spectrum is redistributed in this package; spectra are
-identified by immutable archive records and must be retrieved from the
-originating archive.
-
-Third-party software dependencies, including PyQSOFit, remain under their own
-licenses. See the environment specification for versions.

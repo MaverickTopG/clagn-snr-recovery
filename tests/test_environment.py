@@ -127,5 +127,6 @@ def test_raw_survey_data_is_not_redistributed() -> None:
         ["git", "ls-files"], cwd=root, capture_output=True, text=True, check=True
     ).stdout.split()
     assert not [f for f in tracked if f.startswith("03_spectra/")]
-    fits = [f for f in tracked if f.endswith((".fits", ".fits.gz"))]
-    assert fits == ["config/pyqsofit_qsopar.fits"], fits
+    # No FITS at all: the PyQSOFit line-parameter file is GPL-3.0 and ships with
+    # PyQSOFit itself, which 00_make_environment.py clones.
+    assert not [f for f in tracked if f.endswith((".fits", ".fits.gz"))]

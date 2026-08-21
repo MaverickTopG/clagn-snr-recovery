@@ -58,7 +58,7 @@ def _is_mjd(value: object) -> bool:
 def load_candidates(path: Path = BENCHMARK) -> pd.DataFrame:
     if not path.exists():
         raise FileNotFoundError(
-            f"labelled input not found: {path}. See 00_admin/decisions_log.md D-005."
+            f"labelled input not found: {path}. Set P3SF_BENCHMARK_CSV to its location."
         )
     frame = pd.read_csv(path)
     return frame.drop(columns=[c for c in ("split", "y_true", "mag") if c in frame.columns])

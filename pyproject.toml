@@ -1,6 +1,6 @@
 [project]
 name = "p3sf"
-version = "0.1.0"
+version = "1.0.0"
 description = "Spectroscopic selection function of changing-look AGN: conditional classification efficiency under counterfactual observing conditions"
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
@@ -11,8 +11,8 @@ dependencies = [
     "numpy>=2.1,<3",
     "scipy>=1.14",
     # Upper-bounded deliberately: PyQSOFit 2.1.6 predates astropy 8 and is only
-    # proven against the 7.x series (CLAGN-WISE-ApJ ran it on 40,672 sources at
-    # astropy 7.2.2). See 00_admin/decisions_log.md (D-003).
+    # proven against the 7.x series, which is the range this release was tested
+    # against. Do not widen without retesting the spectral fits.
     "astropy>=7.0,<8",
     "pandas>=2.2",
     "matplotlib>=3.9",
@@ -64,9 +64,8 @@ dev = [
 
 [tool.uv]
 # sparclclient 1.3.0 declares pandas>=2.1.1,<2.2.0. That pin is stale: the
-# CLAGN-WISE-ApJ venv runs sparclclient 1.3.0 against pandas 3.0.5 without
-# issue, and we use only its retrieval API, not any pandas-facing surface.
-# Recorded in 00_admin/decisions_log.md (D-002).
+# sparclclient 1.3.0 runs against newer pandas without issue, and only its
+# retrieval API is used here, not any pandas-facing surface.
 override-dependencies = ["pandas>=2.2"]
 
 [build-system]

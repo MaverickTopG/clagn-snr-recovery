@@ -1,10 +1,15 @@
 # =====================================================================
 # FROZEN ANALYSIS CONFIGURATION
 # =====================================================================
-# Once the locked validation stratum is opened (29_locked_validation.py),
-# this file MUST NOT be silently modified. Any change requires an entry in
-# 00_admin/decisions_log.md giving the date, the reason, and the git hash
-# of the commit that changed it.
+# STATUS: this is the PROSPECTIVE plan of 2026-08-14, not the analysis the
+# paper reports. It is retained because the package's validators and its
+# directory discovery were built against this schema, and it still contains
+# grids the paper does not report, including the host-fraction experiment that
+# was later abandoned.
+#
+# For any published quantity use 00_admin/final_paper3_analysis_config.yaml.
+# Differences between the two are listed in 00_admin/PROTOCOL_DEVIATIONS.md.
+# The pristine 2026-08-14 copy is original_prospective_config_2026-08-14.yaml.
 #
 # No script may hardcode a value that appears here. Load via p3sf.config.
 # =====================================================================

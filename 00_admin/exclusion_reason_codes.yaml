@@ -2,7 +2,7 @@
 #
 # Every row in exclusions_log.csv must carry a code from this file. Adding a
 # code is allowed (science reveals new failure modes); it requires a
-# decisions_log.md entry. Removing or redefining a code does not.
+# PROTOCOL_DEVIATIONS.md entry. Removing or redefining a code does not.
 #
 # The point of this file: the manuscript must be able to say "N objects were
 # excluded for predefined reason X", never "we visually removed several weird

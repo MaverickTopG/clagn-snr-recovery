@@ -1,0 +1,108 @@
+# =====================================================================
+# FINAL PAPER 3 ANALYSIS CONFIGURATION
+# =====================================================================
+# Describes only the analysis reported in:
+#
+#   "Signal-to-Noise and Classification Protocols Shape the Spectroscopic
+#    Recovery of Changing-Look AGN"
+#
+# Values are transcribed from the production artifacts under 05_analysis/,
+# not from the earlier prospective plan. Where the two disagree, this file
+# is correct for the paper and the prospective plan is correct for what was
+# intended beforehand; the differences are listed in PROTOCOL_DEVIATIONS.md.
+#
+# The earlier plan is preserved unchanged as
+# original_prospective_config_2026-08-14.yaml. It remains the file the code
+# loads at runtime, because the package's validators and directory discovery
+# were built against its schema; see PROTOCOL_DEVIATIONS.md section I.
+# =====================================================================
+
+final_config_version: 1
+status: final_paper_analysis
+
+study:
+  reference_primary_n: 58
+  reference_sensitivity_n: 62
+  primary_line: Hbeta
+
+snr:
+  target_rungs: [5, 10]
+  metric: median_native_pixel_snr
+  metric_rest_window_angstrom: [4700.0, 5100.0]
+  metric_contains_hbeta: true
+  metric_is_survey_depth_estimator: false
+  primary_arm: faint_only
+  secondary_arm: matched
+  upgrades_allowed: false
+  # Reported but excluded from inference: native support was too sparse.
+  rungs_considered_and_excluded: [15, 20, 30, 40]
+
+monte_carlo:
+  realizations: 50
+  seed_namespace: "p3sf:q1:full:v1"
+  common_random_numbers: shared_faint_draw_across_arms_at_fixed_rung
+  rungs_share_random_stream: false
+
+production:
+  conditions: 167
+  condition_realizations: 8350
+  distinct_spectral_fit_inputs: 8412
+  automated_classifications: 16700
+  macleod_status_rows: 8350
+
+inference:
+  independent_unit: transition
+  bootstrap_resamples: 5000
+  bootstrap_cluster: transition_id
+  common_support_membership: fixed_before_resampling
+
+reference:
+  gold: 58
+  gold_plus_silver: 62
+  turn_off_gold: 43
+  turn_on_gold: 15
+  redshift_range: [0.060, 0.737]
+  redshift_median: 0.181
+  largest_source_family: Dong2025_SDSS_LAMOST
+  largest_source_family_n: 34
+  adjudication: single_adjudicator_no_independent_second_reading
+  literature_search_cutoff_utc: "2026-08-15T23:59:00Z"
+  source_families_considered: 31
+
+green:
+  threshold: 3.0
+  comparison: inclusive
+  rebin_angstrom: 2.0
+  decision_window_angstrom: [4750.0, 4940.0]
+  smoothing_pixels: 16
+  significance_interpretation: false
+  published_statistic_reproduced: true
+  preprocessing_is_this_projects_pyqsofit: true
+  model_uncertainty_propagated_into_variance: false
+
+yang_ratio_pyqsofit:
+  flux_ratio_threshold: 0.3
+  broad_fwhm_min_kms: 1200.0
+  broad_fwhm_max_kms: 20000.0
+  fit_region_angstrom: [4640.0, 5100.0]
+  original_qgfit_pipeline_reproduced: false
+
+physical_host_fraction_experiment:
+  status: no_go
+  reason: >-
+    Host decompositions were model-sensitive or non-identifiable, and
+    historical aperture mismatch prevented a pair-consistent physical
+    host-fraction interpretation.
+
+controlled_stellar_shape_diagnostic:
+  inferential_status: secondary_diagnostic_only
+  quantity: externally_added_stellar_continuum_share
+  is_physical_total_host_fraction: false
+
+instrument_pair_analysis:
+  inferential_status: descriptive_composition_check_only
+
+fitting:
+  engine: pyqsofit
+  pyqsofit_version: 2.1.6
+  pyqsofit_commit: 084df5a7d2af76b38719af5851b114ad9ecf4d60
