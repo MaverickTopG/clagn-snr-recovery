@@ -1,0 +1,53 @@
+object_id,stage,reason_code,detail,script,timestamp
+SDSSJ080138.67+423354.1,catalog,OUT_OF_REDSHIFT_RANGE,z > 0.45 (primary cohort),07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ141324.27+530527.0,catalog,OUT_OF_REDSHIFT_RANGE,z > 0.45 (primary cohort),07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ101322.43+214021.74,catalog,OUT_OF_REDSHIFT_RANGE,z > 0.45 (primary cohort),07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ091407.16+243633.08,catalog,OUT_OF_REDSHIFT_RANGE,z > 0.45 (primary cohort),07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ015653.16-004623.28,catalog,OUT_OF_REDSHIFT_RANGE,z > 0.45 (primary cohort),07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ143040.58+364903.90,catalog,OUT_OF_REDSHIFT_RANGE,z > 0.45 (primary cohort),07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ015726.00-000602.15,catalog,OUT_OF_REDSHIFT_RANGE,z > 0.45 (primary cohort),07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ005813.68+001409.09,catalog,OUT_OF_REDSHIFT_RANGE,z > 0.45 (primary cohort),07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ020222.00+010557.11,catalog,OUT_OF_REDSHIFT_RANGE,z > 0.45 (primary cohort),07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ025410.08+034911.9,catalog,OUT_OF_REDSHIFT_RANGE,z > 0.45 (primary cohort),07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ231742.68+011425.2,catalog,OUT_OF_REDSHIFT_RANGE,z > 0.45 (primary cohort),07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ094443.08+580953.2,catalog,OUT_OF_REDSHIFT_RANGE,z > 0.45 (primary cohort),07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ124946.13+365204.21,catalog,OUT_OF_REDSHIFT_RANGE,z > 0.45 (primary cohort),07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ022930.91-000845.37,catalog,OUT_OF_REDSHIFT_RANGE,z > 0.45 (primary cohort),07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+NGC 5273,catalog,NO_SDSS_DESI_MATCH,identifier is not an SDSS designation; no SDSS/DESI epoch pair expected,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+NGC 7603,catalog,NO_SDSS_DESI_MATCH,identifier is not an SDSS designation; no SDSS/DESI epoch pair expected,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+NGC 5548,catalog,NO_SDSS_DESI_MATCH,identifier is not an SDSS designation; no SDSS/DESI epoch pair expected,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+NGC 7582,catalog,NO_SDSS_DESI_MATCH,identifier is not an SDSS designation; no SDSS/DESI epoch pair expected,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+NGC 3516,catalog,NO_SDSS_DESI_MATCH,identifier is not an SDSS designation; no SDSS/DESI epoch pair expected,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+NGC 1566,catalog,NO_SDSS_DESI_MATCH,identifier is not an SDSS designation; no SDSS/DESI epoch pair expected,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+HE 1136-2304,catalog,NO_SDSS_DESI_MATCH,identifier is not an SDSS designation; no SDSS/DESI epoch pair expected,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ082323.88+422048.2,splits,HELD_OUT_STRATUM,reserved for validation/replication,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ230614.18-010024.45,splits,HELD_OUT_STRATUM,reserved for validation/replication,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ153734.06+461358.9,splits,HELD_OUT_STRATUM,reserved for validation/replication,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ081425.89+294115.6,splits,HELD_OUT_STRATUM,reserved for validation/replication,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ113706.93+481943.68,splits,HELD_OUT_STRATUM,reserved for validation/replication,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ093812.27+074340.0,splits,HELD_OUT_STRATUM,reserved for validation/replication,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ161407.07+513354.5,splits,HELD_OUT_STRATUM,reserved for validation/replication,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ115355.88+112554.2,splits,HELD_OUT_STRATUM,reserved for validation/replication,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ215130.35+003522.26,splits,HELD_OUT_STRATUM,reserved for validation/replication,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ160111.26+474509.6,splits,HELD_OUT_STRATUM,reserved for validation/replication,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ100256.22+475027.7,splits,HELD_OUT_STRATUM,reserved for validation/replication,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ110501.26+562724.5,splits,HELD_OUT_STRATUM,reserved for validation/replication,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ102152.34+464515.6,slice,SLICE_BUDGET,beyond the feasibility-slice object budget,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ105058.42+241351.18,slice,SLICE_BUDGET,beyond the feasibility-slice object budget,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ105325.40+302419.34,slice,SLICE_BUDGET,beyond the feasibility-slice object budget,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ114408.90+424357.5,slice,SLICE_BUDGET,beyond the feasibility-slice object budget,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ120442.10+275411.8,slice,SLICE_BUDGET,beyond the feasibility-slice object budget,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ123359.12+084211.5,slice,SLICE_BUDGET,beyond the feasibility-slice object budget,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ141213.61+021202.1,slice,SLICE_BUDGET,beyond the feasibility-slice object budget,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ153612.80+034245.7,slice,SLICE_BUDGET,beyond the feasibility-slice object budget,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ161711.42+063833.4,slice,SLICE_BUDGET,beyond the feasibility-slice object budget,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ210200.42+000501.8,slice,SLICE_BUDGET,beyond the feasibility-slice object budget,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ222132.41-010928.70,slice,SLICE_BUDGET,beyond the feasibility-slice object budget,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ233602.98+001728.7,slice,SLICE_BUDGET,beyond the feasibility-slice object budget,07_construct_reference_candidates.py,2026-08-14T19:16:03+00:00
+SDSSJ074511.98+380911.3,coverage,INSUFFICIENT_EPOCHS,only 1 SDSS spectrum available,04_download_sdss_spectra.py,2026-08-14T19:18:45+00:00
+SDSSJ123359.12+084211.5,coverage,INSUFFICIENT_EPOCHS,only 1 SDSS spectrum available,04_download_sdss_spectra.py,2026-08-14T20:05:32+00:00
+SDSSJ141213.61+021202.1,coverage,INSUFFICIENT_EPOCHS,only 1 SDSS spectrum available,04_download_sdss_spectra.py,2026-08-14T20:05:32+00:00
+SDSSJ153612.80+034245.7,coverage,INSUFFICIENT_EPOCHS,only 1 SDSS spectrum available,04_download_sdss_spectra.py,2026-08-14T20:05:32+00:00
+SDSSJ161711.42+063833.4,coverage,INSUFFICIENT_EPOCHS,only 1 SDSS spectrum available,04_download_sdss_spectra.py,2026-08-14T20:05:32+00:00
+SDSSJ210200.42+000501.8,coverage,INSUFFICIENT_EPOCHS,only 1 SDSS spectrum available,04_download_sdss_spectra.py,2026-08-14T20:05:32+00:00
+SDSSJ210200.42+000501.8,catalog,IDENTITY_AMBIGUOUS,DESI z=2.1219 vs catalogue z=0.3290 (targetid 39627790022082712),05_download_desi_spectra.py,2026-08-14T21:14:42+00:00

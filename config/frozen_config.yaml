@@ -1,0 +1,193 @@
+# =====================================================================
+# FROZEN ANALYSIS CONFIGURATION
+# =====================================================================
+# Once the locked validation stratum is opened (29_locked_validation.py),
+# this file MUST NOT be silently modified. Any change requires an entry in
+# 00_admin/decisions_log.md giving the date, the reason, and the git hash
+# of the commit that changed it.
+#
+# No script may hardcode a value that appears here. Load via p3sf.config.
+# =====================================================================
+
+config_version: 1
+frozen: false            # flipped to true by 29_locked_validation.py
+frozen_at_git_hash: null # filled in when frozen
+
+# ---------------------------------------------------------------------
+# Primary experiment definition
+# ---------------------------------------------------------------------
+primary_line: Hbeta
+secondary_lines: [Halpha]
+
+redshift:
+  primary_max: 0.45      # Hbeta robust; Halpha in DESI for much of the sample;
+                         # matches DESI DR1 EmFit VAC coverage (z <= 0.45)
+  primary_min: 0.0
+
+random_seed: 314159
+
+# ---------------------------------------------------------------------
+# Counterfactual grids
+# ---------------------------------------------------------------------
+# ---------------------------------------------------------------------
+# S/N experiment — FINAL GRID RECONFIRMED 2026-08-16 (D-091). D-088's final
+# grid was prospectively re-derived after validating six additional GOLD pairs,
+# giving 10 GOLD and 14 GOLD+SILVER exact historical transitions.
+#
+# A pair has two S/N values, not one. The binding metric is the Hbeta window,
+# since that is what governs broad-line detectability; the 5100 A continuum
+# metric is recorded alongside and never used alone.
+# ---------------------------------------------------------------------
+snr_grid: [5, 10]                # D-091 reconfirmed final Q1 rungs (both arms)
+
+snr_experiment:
+  binding_metric: hbeta_window   # 'continuum_5100' reported alongside
+  # Primary: degrade the faint/line-poor epoch, hold bright at native quality.
+  primary_arm: faint_only
+  # Secondary: degrade both to the same target (the literature convention).
+  secondary_arm: matched
+  # Exploratory 2-D surface. Disabled until sample support justifies it.
+  exploratory_arm: joint
+  exploratory_enabled: false
+  exploratory_bright_rungs: [20, 30]
+  # D-091: reported but excluded from final inference for sparse exact-reference
+  # support. GOLD support at 15/20/30 is 3/1/0 in either arm; all-14 support is
+  # 5/2/1 faint-only and 5/2/0 matched.
+  underpowered_rungs: [15, 20, 30]
+  # D-091: unreachable by every exact-reference pair in both arms.
+  removed_rungs: [40]
+
+host_fraction_grid: [0.1, 0.3, 0.5, 0.7, 0.85]
+
+mc_realizations: 50      # D-089 final common Q1 M; never object-specific.
+
+# Reduced grid used only by the feasibility slice. Never used for results.
+slice_grid:
+  snr: [5, 10]
+  host_fraction: [0.1, 0.5, 0.85]
+  mc_realizations: 5
+  n_objects: 5
+
+# ---------------------------------------------------------------------
+# Sample
+# ---------------------------------------------------------------------
+primary_sample:
+  class: gold
+
+splits:
+  method: sha256_object_id
+  buckets: 10
+  development: [0, 1, 2, 3, 4, 5]
+  validation: [6, 7]
+  replication: [8, 9]
+
+# ---------------------------------------------------------------------
+# Spectral windows (rest frame, Angstrom)
+# ---------------------------------------------------------------------
+windows:
+  hbeta_region: [4700.0, 5100.0]
+  halpha_region: [6400.0, 6800.0]
+  continuum_5100: [5080.0, 5130.0]
+  continuum_blue: [4750.0, 4780.0]
+  feii_window: [5150.0, 5350.0]
+  # Line-free windows used for the normalized-residual error audit (section 17)
+  error_audit_windows:
+    - [4180.0, 4230.0]
+    - [4400.0, 4450.0]
+    - [5600.0, 5650.0]
+
+host_fraction_reference_wavelength: 5100.0
+
+# Two quality metrics per spectrum, never one (D-010). No conclusion may rest
+# on a single S/N definition. The Hbeta-window metric is added in step 2.
+snr_metrics:
+  continuum_5100: [5080.0, 5130.0]
+  hbeta_window: [4700.0, 5100.0]
+
+# ---------------------------------------------------------------------
+# Fitting
+# ---------------------------------------------------------------------
+fitting:
+  engine: pyqsofit
+  pyqsofit_repo: https://github.com/legolason/PyQSOFit.git
+  pyqsofit_commit: 084df5a7d2af76b38719af5851b114ad9ecf4d60
+  pyqsofit_version: 2.1.6
+  components: [powerlaw_continuum, host_pca, feii, narrow_hbeta, broad_hbeta, oiii4959, oiii5007]
+  broad_fwhm_min_kms: 1200.0
+  yang_broad_fwhm_max_kms: 20000.0  # Yang source model domain (D-089)
+  detection_sigma: 3.0        # threshold for "detected"; non-detections carry a 3-sigma upper limit
+  upper_limit_sigma: 3.0
+  max_iterations: 5000
+
+# ---------------------------------------------------------------------
+# Quality control (deterministic; frozen before any outcome is inspected)
+# ---------------------------------------------------------------------
+qc:
+  min_continuum_snr: 3.0
+  max_masked_fraction_in_line_region: 0.20
+  require_hbeta_coverage: true
+  # SUPERSEDED by D-016: replaced with bit-aware ZWARNING logic. A blind
+  # ZWARNING == 0 cut preferentially removes early/dim states, which are the
+  # transition states this paper needs. Retained only so the config validates
+  # until the bitmask decoder lands (execution step 4).
+  sdss_zwarning_max: 0
+  desi_zwarn_max: 0
+  desi_use_fiberstatus: true   # AND zwarn; fiberstatus alone retains bad spectra
+
+# ---------------------------------------------------------------------
+# Uncertainty renormalisation (section 16-17)
+# DESI DR1 IVAR is documented to underestimate variance above S/N ~ 20-30.
+# Factors are MEASURED by 13_validate_noise_model.py, not assumed.
+# ---------------------------------------------------------------------
+noise_model:
+  renormalise: true
+  stratify_by: [survey, snr_bin]
+  snr_bins: [0, 5, 10, 20, 30, 50, 1000]
+  surveys: [sdss_legacy, boss_eboss, desi]
+  measured_factors: null      # populated by 13_validate_noise_model.py
+
+# ---------------------------------------------------------------------
+# Calibration treatments (section 52) - every primary result repeats under all three
+# ---------------------------------------------------------------------
+calibration_treatments: [none, oiii_rescale, pseudo_photometric]
+
+# ---------------------------------------------------------------------
+# Statistics
+# ---------------------------------------------------------------------
+bootstrap:
+  n: 5000
+  cluster: object_id          # NEVER pixel, spectrum, or MC realization
+
+primary_contrasts:
+  - id: PC1
+    description: sensitivity at faint-epoch S/N 10 versus 20 (primary faint_only arm)
+  - id: PC2
+    description: sensitivity at host fraction 0.3 versus 0.7
+  - id: PC3
+    description: sensitivity difference between published classification criteria
+
+multiplicity:
+  primary_contrasts_adjusted: false   # only three, pre-declared
+  secondary_adjustment: holm
+
+regression:
+  smoother: restricted_cubic_spline
+  spline_knots: 4
+  interactions: [["log_snr", "host_fraction"]]
+
+# ---------------------------------------------------------------------
+# Classification criteria (thresholds transcribed in
+# 01_literature/selection_definitions.md; implemented verbatim first)
+# ---------------------------------------------------------------------
+criteria:
+  primary:
+    - nsigma
+    - flux_ratio
+    - type_change
+    - difference_spectrum
+  nsigma:
+    threshold: 3.0
+    robustness_sweep: [2.0, 2.5, 3.0, 4.0, 5.0]
+  flux_ratio:
+    threshold: null           # from literature; see selection_definitions.md
+    robustness_sweep: [1.5, 2.0, 3.0]
