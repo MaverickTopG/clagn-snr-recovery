@@ -1,0 +1,25 @@
+{
+  "derivation": "RESTATEMENT_OF_IMMUTABLE_D094_OUTCOMES",
+  "source_artifact": "05_analysis/q1_production/d094/raw/classifier_outcomes_d094.csv",
+  "frozen_table_reproduced": {
+    "N_both_classifiable": true,
+    "N_agree": true,
+    "N_disagree": true,
+    "N_YANG_CL_GREEN_NONCL": true,
+    "N_YANG_NONCL_GREEN_CL": true,
+    "disagreement_i": true,
+    "row_count": true
+  },
+  "unit_of_analysis": "transition (one physical AGN)",
+  "inclusion_rule": "every transition with >=1 both-classifiable realization",
+  "minimum_denominator_threshold": null,
+  "minimum_denominator_rationale": "no minimum was prospectively frozen; imposing one after outcomes are visible would be an outcome-conditioned threshold",
+  "bootstrap": {
+    "draws": 5000,
+    "cluster": "transition_id",
+    "interval": "percentile 95% CI for the equal-transition mean",
+    "seed_base": 314159,
+    "seed_construction": "sha256('<base>|d099|disagreement|<scope>|<arm>|<snr>')[:8]"
+  },
+  "simulation_or_refit_performed": false
+}

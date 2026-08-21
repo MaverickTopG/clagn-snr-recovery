@@ -1,0 +1,5 @@
+object_id,paper3_reference_tier,primary_q1_reference,primary_q2_pair_consistent,pair_eligibility,reason
+SDSSJ082942.66+415436.8,GOLD,True,True,PAIR_CONSISTENT_ELIGIBLE,"Exact same-aperture endpoints; J082 criterion-specific uncertainty limitation remains"
+SDSSJ102152.34+464515.6,GOLD,True,False,SPECTRUM_DIAGNOSTIC_ONLY,"Exact transition but 3-to-2 arcsec aperture mismatch"
+SDSSJ105325.40+302419.34,GOLD,True,False,SPECTRUM_DIAGNOSTIC_ONLY,"Exact transition but 3-to-2 arcsec aperture mismatch"
+SDSSJ233602.98+001728.7,GOLD,True,False,SPECTRUM_DIAGNOSTIC_ONLY,"Exact transition but 3-to-2 arcsec aperture mismatch"

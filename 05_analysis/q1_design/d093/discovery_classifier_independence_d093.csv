@@ -1,0 +1,21 @@
+source_family,discovery_method,yang_related_selection,green_related_selection,visual_confirmation,photometric_preselection,automated_spectral_preselection,final_classifier,classifier_independence_status,discovery_independent_sensitivity_included,assignment_basis
+Dong2025_SDSS_LAMOST,automated spectral fitting followed by visual and photometric confirmation,True,True,True,True,True,YANG2024_FINAL,PARTIALLY_METHOD_OVERLAPPING,True,FROZEN_BEFORE_Q1_OUTCOMES_D093
+Dong2025_SDSS_LAMOST,automated spectral fitting followed by visual and photometric confirmation,True,True,True,True,True,GREEN2022_FINAL,PARTIALLY_METHOD_OVERLAPPING,True,FROZEN_BEFORE_Q1_OUTCOMES_D093
+Green2022,Green Hbeta pixel-significance selection plus visual confirmation,False,True,True,False,True,YANG2024_FINAL,DISCOVERY_INDEPENDENT,True,FROZEN_BEFORE_Q1_OUTCOMES_D093
+Green2022,Green Hbeta pixel-significance selection plus visual confirmation,False,True,True,False,True,GREEN2022_FINAL,DIRECTLY_CRITERION_SELECTED,False,FROZEN_BEFORE_Q1_OUTCOMES_D093
+LaMassa2015,serendipitous archival repeat spectroscopy,False,False,True,True,False,YANG2024_FINAL,DISCOVERY_INDEPENDENT,True,FROZEN_BEFORE_Q1_OUTCOMES_D093
+LaMassa2015,serendipitous archival repeat spectroscopy,False,False,True,True,False,GREEN2022_FINAL,DISCOVERY_INDEPENDENT,True,FROZEN_BEFORE_Q1_OUTCOMES_D093
+MacLeod2016,photometric variability selection plus repeat spectral confirmation,False,False,True,True,False,YANG2024_FINAL,DISCOVERY_INDEPENDENT,True,FROZEN_BEFORE_Q1_OUTCOMES_D093
+MacLeod2016,photometric variability selection plus repeat spectral confirmation,False,False,True,True,False,GREEN2022_FINAL,DISCOVERY_INDEPENDENT,True,FROZEN_BEFORE_Q1_OUTCOMES_D093
+Potts2021,repeat-spectrum difference preselection plus visual confirmation,False,True,True,False,True,YANG2024_FINAL,DISCOVERY_INDEPENDENT,True,FROZEN_BEFORE_Q1_OUTCOMES_D093
+Potts2021,repeat-spectrum difference preselection plus visual confirmation,False,True,True,False,True,GREEN2022_FINAL,PARTIALLY_METHOD_OVERLAPPING,True,FROZEN_BEFORE_Q1_OUTCOMES_D093
+Ruan2016,photometric change plus repeat spectroscopy and difference spectrum,False,False,True,True,False,YANG2024_FINAL,DISCOVERY_INDEPENDENT,True,FROZEN_BEFORE_Q1_OUTCOMES_D093
+Ruan2016,photometric change plus repeat spectroscopy and difference spectrum,False,False,True,True,False,GREEN2022_FINAL,DISCOVERY_INDEPENDENT,True,FROZEN_BEFORE_Q1_OUTCOMES_D093
+Runnoe2016,TDSS repeat spectroscopy with continuum and Balmer confirmation,False,False,True,True,False,YANG2024_FINAL,DISCOVERY_INDEPENDENT,True,FROZEN_BEFORE_Q1_OUTCOMES_D093
+Runnoe2016,TDSS repeat spectroscopy with continuum and Balmer confirmation,False,False,True,True,False,GREEN2022_FINAL,DISCOVERY_INDEPENDENT,True,FROZEN_BEFORE_Q1_OUTCOMES_D093
+Yang2018,heterogeneous repeat-spectroscopy and photometric CLAGN selection,True,False,True,True,True,YANG2024_FINAL,PARTIALLY_METHOD_OVERLAPPING,True,FROZEN_BEFORE_Q1_OUTCOMES_D093
+Yang2018,heterogeneous repeat-spectroscopy and photometric CLAGN selection,True,False,True,True,True,GREEN2022_FINAL,DISCOVERY_INDEPENDENT,True,FROZEN_BEFORE_Q1_OUTCOMES_D093
+Yang2025_turn_on,optical/MIR variability preselection plus spectroscopic confirmation,True,True,True,True,True,YANG2024_FINAL,PARTIALLY_METHOD_OVERLAPPING,True,FROZEN_BEFORE_Q1_OUTCOMES_D093
+Yang2025_turn_on,optical/MIR variability preselection plus spectroscopic confirmation,True,True,True,True,True,GREEN2022_FINAL,PARTIALLY_METHOD_OVERLAPPING,True,FROZEN_BEFORE_Q1_OUTCOMES_D093
+Zeltyn2024_SDSSV,repeat spectroscopy plus visual confirmation and light-curve/follow-up support,True,True,True,True,True,YANG2024_FINAL,PARTIALLY_METHOD_OVERLAPPING,True,FROZEN_BEFORE_Q1_OUTCOMES_D093
+Zeltyn2024_SDSSV,repeat spectroscopy plus visual confirmation and light-curve/follow-up support,True,True,True,True,True,GREEN2022_FINAL,PARTIALLY_METHOD_OVERLAPPING,True,FROZEN_BEFORE_Q1_OUTCOMES_D093

@@ -1,0 +1,20 @@
+{
+  "applicable_unclassifiable": 4456,
+  "inapplicable_by_design": 1300,
+  "interpretation": "Boundary failures dominate; valid nondetections are a source-permitted classifiable zero convention, not a failure.",
+  "nonexclusive_failure_incidence": {
+    "degraded_fit_boundary_failure": 3635,
+    "local_fit_invalidity": 1250,
+    "measurement_unavailable": 32,
+    "native_boundary_failure": 550,
+    "nondetection_semantics": 0
+  },
+  "terminal_priority_categories": {
+    "degraded_fit_boundary_failure": 3387,
+    "inapplicable_by_design": 1300,
+    "local_fit_invalidity": 498,
+    "measurement_unavailable": 21,
+    "native_boundary_failure": 550
+  },
+  "valid_nondetection_semantics_used_in_classifiable_rows": 18
+}

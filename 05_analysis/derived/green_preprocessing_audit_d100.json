@@ -1,0 +1,24 @@
+{
+  "verdict": "GREEN_DECOMPOSITION_RAN_PER_REALIZATION_AND_ALWAYS_CONVERGED",
+  "fit_inputs_total": 8412,
+  "fit_inputs_by_kind": {
+    "faint_shared": 4250,
+    "matched_bright": 4100,
+    "native_bright": 62
+  },
+  "decomposition_is_per_realization": true,
+  "native_bright_fits_reused_within_transition": 62,
+  "green_preprocessing_valid": 8412,
+  "green_preprocessing_invalid": 0,
+  "distinct_green_invalid_reasons": [],
+  "all_jobs_completed": true,
+  "green_applicable_realizations": 7750,
+  "green_applicable_invalid_realizations": 0,
+  "yang_applicable_realizations": 7050,
+  "yang_applicable_invalid_realizations": 4456,
+  "yang_fit_valid_inputs": 4833,
+  "yang_invalid_inputs": 3579,
+  "failure_propagation_path": "fit_green_epoch_line_spectrum_pyqsofit sets preprocessing_valid; _green_from_fit carries it into measure_green_pixel_nsigma; _rebin_two_angstrom returns None when it is false; classify_green_pixel_measurement then returns unclassifiable, never non-CL",
+  "interpretation": "The zero is an observed convergence outcome, not a structural guarantee. Both protocols require a converged continuum fit; only the fitted-line protocol additionally requires a broad component strictly interior to its scale, width and centroid bounds, and that is the requirement that fails.",
+  "refit_or_reclassification_performed": false
+}

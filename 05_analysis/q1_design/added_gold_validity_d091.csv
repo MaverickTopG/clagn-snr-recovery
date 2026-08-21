@@ -1,0 +1,7 @@
+transition_id,reference_evidence_status,identity_pair_valid,both_endpoints_native_qc_valid,green_preprocessing_variance_feasible,yang_bright_native_fit_valid,yang_faint_native_fit_valid,q1_native_endpoint_valid,q1_eligible,technical_exclusion_reason
+SDSSJ015957.64+003310.4,GOLD_REFERENCE_EVIDENCE_PASS,True,True,True,False,False,True,True,
+SDSSJ012648.08-083948.0,GOLD_REFERENCE_EVIDENCE_PASS,True,True,True,False,True,True,True,
+SDSSJ101152.98+544206.4,GOLD_REFERENCE_EVIDENCE_PASS,True,True,True,True,False,True,True,
+SDSSJ000236.25-002724.8,GOLD_REFERENCE_EVIDENCE_PASS,True,True,True,True,False,True,True,
+SDSSJ135855.83+493414.2,GOLD_REFERENCE_EVIDENCE_PASS,True,True,True,False,False,True,True,
+SDSSJ021359.79+004226.81,GOLD_REFERENCE_EVIDENCE_PASS,True,True,True,True,True,True,True,

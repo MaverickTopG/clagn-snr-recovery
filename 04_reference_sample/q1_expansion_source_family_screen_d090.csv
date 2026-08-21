@@ -1,0 +1,13 @@
+source_family,primary_publication,records_screened,record_level_action,reason
+LaMassa2015,LaMassa et al. 2015,1,INCLUDED,"Independent detailed morphology; exact SDSS/BOSS endpoints"
+Ruan2016,Ruan et al. 2016,3,INCLUDED_DEDUPLICATED,"Two non-current physical events; J233 is already current and J0159 is assigned to its discovery family"
+Runnoe2016,Runnoe et al. 2016,1,INCLUDED,"Independent detailed morphology; exact SDSS/eBOSS endpoints"
+MacLeod2016,MacLeod et al. 2016,10,INCLUDED_DEDUPLICATED,"Nine outside current 17; exact SDSS/BOSS identifiers published"
+Yang2018,Yang et al. 2018,21,INCLUDED,"Mixed SDSS/LAMOST/private follow-up; only exact reproducibly identified public pairs can count"
+MacLeod2019,MacLeod et al. 2019,17,NO_NEW_COUNTABLE_EVENT,"Current objects retained; remaining discovery follow-up endpoints are not reproducibly public; later eBOSS spectra are not substitutes"
+Graham2020,Graham et al. 2020,111,FAMILY_LEVEL_EXCLUSION,"Changing-state sample is based on defined Hbeta flux changes and is not evidence of broad-line appearance/disappearance; no tier inherited"
+Potts2021,Potts & Villforth 2021,6,INCLUDED_DEDUPLICATED,"Five non-current records; difference spectra provide classifier-independent morphology"
+Green2022,Green et al. 2022,19,INCLUDED_DEDUPLICATED,"Current J105058/J105325 and MacLeod J002311 deduplicated; tiers use narrative/visual morphology, never Green Nsigma"
+LopezNavas2022_2023,Lopez-Navas et al. 2022/2023,19,FAMILY_LEVEL_ENDPOINT_EXCLUSION,"Second epochs are Keck/Palomar follow-up products without a frozen reproducible public source record"
+GuoDESI2024,Guo et al. 2024,130,FAMILY_LEVEL_INDEPENDENCE_EXCLUSION,"Guo staged classifier is under test in Paper 3; catalogue labels cannot establish independent reference truth without a separate blind raw-spectrum adjudication"
+Hon_BASS_followup,Hon et al./BASS changing-look source families,multiple,FAMILY_LEVEL_ENDPOINT_EXCLUSION,"Discovery endpoints mix 6dF/BASS and targeted follow-up; no bounded exact public endpoint set with immutable identifiers was established in this audit"

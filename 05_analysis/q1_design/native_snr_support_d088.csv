@@ -1,0 +1,9 @@
+transition_id,reference_tier,bright_science_record_id,faint_science_record_id,bright_snr_continuum_5100,bright_snr_hbeta,faint_snr_continuum_5100,faint_snr_hbeta,faint_only_support_5,matched_support_5,faint_only_support_10,matched_support_10,faint_only_support_15,matched_support_15,faint_only_support_20,matched_support_20,faint_only_support_30,matched_support_30,faint_only_support_40,matched_support_40
+SDSSJ012256.19-000252.68,SILVER,sdss:9395-58113-532,sdss:399-51817-238,12.972186,14.271770,10.272626,11.372296,True,True,True,True,False,False,False,False,False,False,False,False
+SDSSJ081319.34+460849.5,SILVER,sdss:439-51877-566,sdss:6392-56331-693,29.294139,29.613148,32.802233,32.415852,True,True,True,True,True,True,True,True,True,False,False,False
+SDSSJ082942.66+415436.8,GOLD,sdss:761-54524-71,sdss:761-52266-60,22.863797,25.604863,22.242160,26.257976,True,True,True,True,True,True,True,True,False,False,False,False
+SDSSJ102152.34+464515.6,GOLD,sdss:944-52614-603,sdss:7386-56769-410,25.487150,26.086349,14.628377,13.875232,True,True,True,True,False,False,False,False,False,False,False,False
+SDSSJ105058.42+241351.18,SILVER,sdss:2481-54068-428,sdss:10467-58138-592,17.886531,17.535530,13.815830,12.054025,True,True,True,True,False,False,False,False,False,False,False,False
+SDSSJ105325.40+302419.34,GOLD,sdss:1981-53463-599,sdss:10476-58141-851,13.159698,12.731029,10.665700,10.354310,True,True,True,True,False,False,False,False,False,False,False,False
+SDSSJ222132.41-010928.70,SILVER,sdss:9238-58013-261,sdss:375-52140-253,22.408858,21.971848,15.054314,15.304189,True,True,True,True,True,True,False,False,False,False,False,False
+SDSSJ233602.98+001728.7,GOLD,sdss:385-51783-360,sdss:4213-55449-530,6.222489,5.413369,9.880472,8.934090,True,True,False,False,False,False,False,False,False,False,False,False

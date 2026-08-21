@@ -1,0 +1,118 @@
+{
+  "checks": {
+    "all_fit_jobs_completed": true,
+    "all_outcomes_terminal": true,
+    "condition_count_167": true,
+    "condition_realizations_8350": true,
+    "degraded_seeds_unique": true,
+    "exact_realizations_per_condition_criterion": true,
+    "faint_crn_shared_across_arms": true,
+    "faint_only_bright_native_unchanged": true,
+    "fit_inputs_8412": true,
+    "no_duplicate_fit_task_ids": true,
+    "no_missing_task_checksums": true,
+    "outcome_rows_25050": true,
+    "seed_namespace_frozen": true,
+    "unapplicable_fail_closed": true
+  },
+  "classifier_status_counts": {
+    "('GREEN2022_FINAL', 'CL')": 2524,
+    "('GREEN2022_FINAL', 'NON_CL')": 5226,
+    "('GREEN2022_FINAL', 'UNCLASSIFIABLE')": 600,
+    "('MACLEOD2019_FINAL', 'UNCLASSIFIABLE')": 8350,
+    "('YANG2024_FINAL', 'CL')": 774,
+    "('YANG2024_FINAL', 'NON_CL')": 1820,
+    "('YANG2024_FINAL', 'UNCLASSIFIABLE')": 5756
+  },
+  "counts": {
+    "condition_realizations": 8350,
+    "conditions": 167,
+    "execution_reruns": 6305,
+    "fit_inputs": 8412,
+    "fit_jobs_completed": 8412,
+    "fit_jobs_failed": 0,
+    "outcome_rows": 25050,
+    "unapplicable_outcome_rows": 10250
+  },
+  "fit_status_counts": {
+    "COMPLETED": 8412
+  },
+  "raw_checksums": [
+    {
+      "bytes": 11116795,
+      "file": "05_analysis/q1_production/d094/raw/classifier_outcomes_d094.csv",
+      "sha256": "c58ff047c22e25096d79dfb5e680cec1dab9b5577d988f02732a9f75cb586aaa"
+    },
+    {
+      "bytes": 911237,
+      "file": "05_analysis/q1_production/d094/raw/classifier_outcomes_d094.parquet",
+      "sha256": "eb5e3c8301c8287d6976dd87aea1df09d6ec7ee8424a6f791a8bfe3be5008386"
+    },
+    {
+      "bytes": 54217,
+      "file": "05_analysis/q1_production/d094/raw/endpoint_bindings_d094.csv",
+      "sha256": "0df86e1f41a5b65d0a1a1e22f0f2f5ea3e909c12c73b0982862e9f4f95e27e76"
+    },
+    {
+      "bytes": 3867250,
+      "file": "05_analysis/q1_production/d094/raw/fit_task_manifest_d094.csv",
+      "sha256": "84abc7196b81ee44b5c499bc912af8638a7f08bf200c405e614e18bd79165f59"
+    },
+    {
+      "bytes": 40315,
+      "file": "05_analysis/q1_production/d094/raw/frozen_condition_matrix_d093.csv",
+      "sha256": "97719b9e55a8a831427b9e8a3b1f11a3f065d5f0926a433cdc8edb86588b2d1c"
+    },
+    {
+      "bytes": 707319430,
+      "file": "05_analysis/q1_production/d094/raw/spectrum_fit_results_d094.parquet",
+      "sha256": "0d859536d5ddeab8cd373629836c73cdf8c3df15345d1e6293915207a9dafe30"
+    }
+  ],
+  "seed": {
+    "base": 314159,
+    "common_random_numbers": "same faint task/seed/array reused across arms",
+    "namespace": "p3sf:q1:full:v1"
+  },
+  "status": "PASS",
+  "unclassifiable_reason_counts": {
+    "FINAL_CLASSIFIER_DENOMINATOR_IF_CLASSIFIABLE": 1900,
+    "FINAL_CLASSIFIER_ROW_NON_DENOMINATOR_WHEN_UNCLASSIFIABLE": 8350,
+    "invalid Yang Hbeta fit: ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND": 2735,
+    "invalid Yang Hbeta fit: ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND|ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND": 443,
+    "invalid Yang Hbeta fit: ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND|ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND|BROAD_COMPONENT_WIDTH_OUTSIDE_YANG_SOURCE_RANGE": 83,
+    "invalid Yang Hbeta fit: ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND|BROAD_COMPONENT_WIDTH_OUTSIDE_YANG_SOURCE_RANGE": 417,
+    "invalid Yang Hbeta fit: ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND|BROAD_COMPONENT_WIDTH_OUTSIDE_YANG_SOURCE_RANGE|ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND": 12,
+    "invalid Yang Hbeta fit: ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND|BROAD_COMPONENT_WIDTH_OUTSIDE_YANG_SOURCE_RANGE|ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND|BROAD_COMPONENT_WIDTH_OUTSIDE_YANG_SOURCE_RANGE": 7,
+    "invalid Yang Hbeta fit: ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND|BROAD_COMPONENT_WIDTH_OUTSIDE_YANG_SOURCE_RANGE|BROAD_COMPONENT_WIDTH_OUTSIDE_YANG_SOURCE_RANGE": 2,
+    "invalid Yang Hbeta fit: ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND|BROAD_MEASUREMENT_NOT_FINITE_OR_WELL_DEFINED": 6,
+    "invalid Yang Hbeta fit: ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND|CONTINUUM_INVALID": 2,
+    "invalid Yang Hbeta fit: ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND|CONTINUUM_INVALID|ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND": 1,
+    "invalid Yang Hbeta fit: ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND|HBETA_OPTIMIZER_FAILED": 2,
+    "invalid Yang Hbeta fit: ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND|HBETA_OPTIMIZER_FAILED|ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND": 5,
+    "invalid Yang Hbeta fit: ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND|HBETA_OPTIMIZER_FAILED|ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND|BROAD_COMPONENT_WIDTH_OUTSIDE_YANG_SOURCE_RANGE": 1,
+    "invalid Yang Hbeta fit: BROAD_COMPONENT_WIDTH_OUTSIDE_YANG_SOURCE_RANGE": 409,
+    "invalid Yang Hbeta fit: BROAD_COMPONENT_WIDTH_OUTSIDE_YANG_SOURCE_RANGE|ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND": 47,
+    "invalid Yang Hbeta fit: BROAD_COMPONENT_WIDTH_OUTSIDE_YANG_SOURCE_RANGE|ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND|BROAD_COMPONENT_WIDTH_OUTSIDE_YANG_SOURCE_RANGE": 19,
+    "invalid Yang Hbeta fit: BROAD_COMPONENT_WIDTH_OUTSIDE_YANG_SOURCE_RANGE|BROAD_COMPONENT_WIDTH_OUTSIDE_YANG_SOURCE_RANGE": 10,
+    "invalid Yang Hbeta fit: BROAD_MEASUREMENT_NOT_FINITE_OR_WELL_DEFINED": 14,
+    "invalid Yang Hbeta fit: BROAD_MEASUREMENT_NOT_FINITE_OR_WELL_DEFINED|ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND": 1,
+    "invalid Yang Hbeta fit: BROAD_MEASUREMENT_NOT_FINITE_OR_WELL_DEFINED|ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND|BROAD_COMPONENT_WIDTH_OUTSIDE_YANG_SOURCE_RANGE": 1,
+    "invalid Yang Hbeta fit: BROAD_MEASUREMENT_NOT_FINITE_OR_WELL_DEFINED|BROAD_COMPONENT_WIDTH_OUTSIDE_YANG_SOURCE_RANGE": 1,
+    "invalid Yang Hbeta fit: CONTINUUM_INVALID": 45,
+    "invalid Yang Hbeta fit: CONTINUUM_INVALID|ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND": 76,
+    "invalid Yang Hbeta fit: CONTINUUM_INVALID|ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND|ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND": 4,
+    "invalid Yang Hbeta fit: CONTINUUM_INVALID|ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND|ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND|BROAD_COMPONENT_WIDTH_OUTSIDE_YANG_SOURCE_RANGE": 1,
+    "invalid Yang Hbeta fit: CONTINUUM_INVALID|ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND|BROAD_COMPONENT_WIDTH_OUTSIDE_YANG_SOURCE_RANGE": 25,
+    "invalid Yang Hbeta fit: CONTINUUM_INVALID|BROAD_COMPONENT_WIDTH_OUTSIDE_YANG_SOURCE_RANGE": 7,
+    "invalid Yang Hbeta fit: CONTINUUM_INVALID|BROAD_COMPONENT_WIDTH_OUTSIDE_YANG_SOURCE_RANGE|ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND": 3,
+    "invalid Yang Hbeta fit: CONTINUUM_INVALID|BROAD_MEASUREMENT_NOT_FINITE_OR_WELL_DEFINED": 2,
+    "invalid Yang Hbeta fit: CONTINUUM_INVALID|HBETA_OPTIMIZER_FAILED|ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND": 1,
+    "invalid Yang Hbeta fit: HBETA_OPTIMIZER_FAILED": 22,
+    "invalid Yang Hbeta fit: HBETA_OPTIMIZER_FAILED|ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND": 39,
+    "invalid Yang Hbeta fit: HBETA_OPTIMIZER_FAILED|ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND|BROAD_COMPONENT_WIDTH_OUTSIDE_YANG_SOURCE_RANGE": 3,
+    "invalid Yang Hbeta fit: HBETA_OPTIMIZER_FAILED|BROAD_COMPONENT_WIDTH_OUTSIDE_YANG_SOURCE_RANGE": 2,
+    "invalid Yang Hbeta fit: HBETA_OPTIMIZER_FAILED|CONTINUUM_INVALID|ACTIVE_BROAD_COMPONENT_PARAMETER_AT_BOUND": 1,
+    "positive valid bright-state broad Hbeta unavailable": 7
+  }
+}

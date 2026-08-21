@@ -1,0 +1,3 @@
+arm,n_transitions,mean_delta,aggregate_monte_carlo_se,bootstrap_ci_half_width,mc_share_of_bootstrap_width,worst_case_single_transition_se,covariance_term_included,independence_basis,rung_seed_pairs_checked,rung_seed_pairs_shared
+faint_only,27,0.2896296296296296,0.009494782337282572,0.12187037037037025,0.07790886585826765,0.07071067811865475,False,"CRN keys on (transition, realization, target S/N): faint draws are shared across arms at fixed rung, never across rungs",1650,0
+matched,25,0.2592,0.009968911675804937,0.11959999999999994,0.08335210431275035,0.07071067811865475,False,"CRN keys on (transition, realization, target S/N): faint draws are shared across arms at fixed rung, never across rungs",1650,0

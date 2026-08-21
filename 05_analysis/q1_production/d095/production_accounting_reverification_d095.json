@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "aggregate_table_exactly_reconstructed": true,
+    "condition_realizations_8350": true,
+    "conditions_167": true,
+    "fifty_realizations_per_condition_classifier": true,
+    "immutable_raw_checksums_reverified": true,
+    "terminal_classifier_outcomes_25050": true,
+    "terminal_label_domain_complete": true,
+    "three_classifier_rows_per_condition_realization": true,
+    "transition_denominator_identities": true,
+    "transition_table_exactly_reconstructed": true
+  },
+  "counts": {
+    "condition_realizations": 8350,
+    "conditions": 167,
+    "terminal_classifier_outcomes": 25050,
+    "transition_condition_classifier_rows": 501
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,8 @@
+{
+  "affected_tasks_to_rerun": 6305,
+  "matrix_changed": false,
+  "reason": "Frozen D-089/D-093 contract masks SDSS by nonpositive IVAR only",
+  "repair": "INVALIDATE_REJECTED_SDSS_BITMASK_READER_OUTPUTS",
+  "seeds_changed": false,
+  "unaffected_tasks_retained": 2107
+}

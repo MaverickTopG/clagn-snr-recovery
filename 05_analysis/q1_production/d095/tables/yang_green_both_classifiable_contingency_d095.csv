@@ -1,0 +1,5 @@
+arm,snr,N_total_realization_cells,N_both_classifiable,Green_CL__Yang_CL,Green_CL__Yang_nonCL,Green_nonCL__Yang_CL,Green_nonCL__Yang_nonCL,N_Green_classifiable_Yang_unclassifiable,N_Green_unclassifiable_Yang_classifiable,N_both_unclassifiable
+faint_only,5,2400,613,90,113,160,250,1587,30,170
+faint_only,10,1450,372,71,174,44,83,978,0,100
+matched,5,2350,695,36,24,224,411,1455,23,177
+matched,10,1350,442,37,103,81,221,808,0,100

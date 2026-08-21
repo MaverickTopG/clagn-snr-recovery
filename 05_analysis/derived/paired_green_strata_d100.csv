@@ -1,0 +1,15 @@
+arm,stratum_kind,stratum,n_transitions,mean_delta,median_delta,min_delta,max_delta
+faint_only,instrument_pair,LAMOST_DR11/SDSS_LEGACY,4,0.015,0.01,-0.02,0.06
+faint_only,instrument_pair,SDSSV_DR19/SDSS_LEGACY,3,0.3933333333333333,0.31999999999999995,0.0,0.86
+faint_only,instrument_pair,SDSS_LEGACY/LAMOST_DR11,8,0.4675,0.67,0.0,0.88
+faint_only,instrument_pair,SDSS_LEGACY/SDSSV_DR19,4,0.42000000000000004,0.43999999999999995,0.0,0.8
+faint_only,instrument_pair,SDSS_LEGACY/SDSS_LEGACY,8,0.145,0.060000000000000005,0.0,0.48
+matched,instrument_pair,LAMOST_DR11/SDSS_LEGACY,3,0.02666666666666667,0.0,0.0,0.08
+matched,instrument_pair,SDSSV_DR19/SDSS_LEGACY,3,0.10000000000000002,0.02,0.0,0.28
+matched,instrument_pair,SDSS_LEGACY/LAMOST_DR11,8,0.29500000000000004,0.27,0.0,0.7999999999999999
+matched,instrument_pair,SDSS_LEGACY/SDSSV_DR19,3,0.3133333333333333,0.2,0.04,0.7
+matched,instrument_pair,SDSS_LEGACY/SDSS_LEGACY,8,0.35000000000000003,0.25,-0.06,0.96
+faint_only,transition_direction,turn_off,18,0.3244444444444444,0.19999999999999998,0.0,0.88
+faint_only,transition_direction,turn_on,9,0.21999999999999997,0.06,-0.02,0.86
+matched,transition_direction,turn_off,17,0.28470588235294114,0.2,-0.06,0.7999999999999999
+matched,transition_direction,turn_on,8,0.20500000000000002,0.05,0.0,0.96

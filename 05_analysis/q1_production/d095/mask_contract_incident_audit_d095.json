@@ -1,0 +1,23 @@
+{
+  "affected_count_frozen_audit": 6305,
+  "affected_count_reconstructed": 6305,
+  "all_8350_degraded_task_seeds_match_frozen_sha256_construction": true,
+  "degraded_seed_uniqueness": true,
+  "detection_time": "Production QC before any D-094 scientific interpretation or accepted aggregate",
+  "evidence_no_outcome_conditioned_rerun": [
+    "Affected selection is exactly instrument_survey contains SDSS and reconstructs 6305/8412 before classifier labels are consulted.",
+    "Unaffected complement reconstructs 2107 tasks: 2106 LAMOST_DR11 and 1 DESI_EDR.",
+    "Repair audit records seeds_changed=false and matrix_changed=false.",
+    "The rejected attempt stopped at production QC; FULL_Q1_EXECUTION_COMPLETE did not exist until the corrected all-input run passed.",
+    "Every degraded seed independently matches the frozen namespace/base/task identity SHA-256 construction."
+  ],
+  "faint_crn_task_seed_array_identity_across_arms": true,
+  "initial_stop_condition": "50 failed J233602 matched-bright S/N=5 inputs caused all-fit-completed and checksum-completeness QC failure",
+  "rerun_rule": "Invalidate every task selected solely by SDSS/SDSS-V instrument provenance; retain every non-SDSS task; rerun the full affected set without inspecting or selecting classifier outcomes.",
+  "root_cause": "Initial D-094 reader added SDSS survey bitmask rejection although D-089/D-093 froze positive-IVAR-only fitting validity; this removed all Hbeta-window pixels for the affected J233602 native bright endpoint and failed QC.",
+  "unaffected_count_reconstructed": 2107,
+  "unaffected_instrument_counts": {
+    "DESI_EDR": 1,
+    "LAMOST_DR11": 2106
+  }
+}

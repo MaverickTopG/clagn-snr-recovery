@@ -1,0 +1,11 @@
+cell_id,object_id,reference_tier,bright_science_record_id,faint_science_record_id,semantics,anchor_epoch,host_shape_id,requested_f_added_star_anchor,requested_added_star_to_baseline_ratio_anchor,normalization_window_rest_angstrom,losvd_km_s,fixed_continuum_snr,no_new_noise,shared_absolute_amplitude_across_pair,no_op_identity_required,host_shape_weight,average_across_H,spectra_generated,execution_authorized
+J082_Q2_000,SDSSJ082942.66+415436.8,GOLD,sdss:761-54524-71,sdss:761-52266-60,PAIR_CONSISTENT,faint,NONE,0.0,0.0,5080-5130,150,True,True,True,True,,False,False,False
+J082_Q2_101,SDSSJ082942.66+415436.8,GOLD,sdss:761-54524-71,sdss:761-52266-60,PAIR_CONSISTENT,faint,XSL_H1,0.1,0.11111111111111112,5080-5130,150,True,True,True,True,,False,False,False
+J082_Q2_102,SDSSJ082942.66+415436.8,GOLD,sdss:761-54524-71,sdss:761-52266-60,PAIR_CONSISTENT,faint,XSL_H2,0.1,0.11111111111111112,5080-5130,150,True,True,True,True,,False,False,False
+J082_Q2_103,SDSSJ082942.66+415436.8,GOLD,sdss:761-54524-71,sdss:761-52266-60,PAIR_CONSISTENT,faint,XSL_H3,0.1,0.11111111111111112,5080-5130,150,True,True,True,True,,False,False,False
+J082_Q2_501,SDSSJ082942.66+415436.8,GOLD,sdss:761-54524-71,sdss:761-52266-60,PAIR_CONSISTENT,faint,XSL_H1,0.5,1.0,5080-5130,150,True,True,True,True,,False,False,False
+J082_Q2_502,SDSSJ082942.66+415436.8,GOLD,sdss:761-54524-71,sdss:761-52266-60,PAIR_CONSISTENT,faint,XSL_H2,0.5,1.0,5080-5130,150,True,True,True,True,,False,False,False
+J082_Q2_503,SDSSJ082942.66+415436.8,GOLD,sdss:761-54524-71,sdss:761-52266-60,PAIR_CONSISTENT,faint,XSL_H3,0.5,1.0,5080-5130,150,True,True,True,True,,False,False,False
+J082_Q2_851,SDSSJ082942.66+415436.8,GOLD,sdss:761-54524-71,sdss:761-52266-60,PAIR_CONSISTENT,faint,XSL_H1,0.85,5.666666666666666,5080-5130,150,True,True,True,True,,False,False,False
+J082_Q2_852,SDSSJ082942.66+415436.8,GOLD,sdss:761-54524-71,sdss:761-52266-60,PAIR_CONSISTENT,faint,XSL_H2,0.85,5.666666666666666,5080-5130,150,True,True,True,True,,False,False,False
+J082_Q2_853,SDSSJ082942.66+415436.8,GOLD,sdss:761-54524-71,sdss:761-52266-60,PAIR_CONSISTENT,faint,XSL_H3,0.85,5.666666666666666,5080-5130,150,True,True,True,True,,False,False,False

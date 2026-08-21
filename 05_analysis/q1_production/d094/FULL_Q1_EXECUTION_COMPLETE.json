@@ -1,0 +1,13 @@
+{
+  "classifier_outcomes": 25050,
+  "condition_realizations": 8350,
+  "conditions": 167,
+  "decision": "FULL_Q1_EXECUTION_COMPLETE",
+  "fit_inputs": 8412,
+  "production_qc": "PASS",
+  "raw_checksum_manifest": "05_analysis/q1_production/d094/raw/raw_checksums_d094.csv",
+  "raw_products_frozen": true,
+  "realizations": 50,
+  "seed_base": 314159,
+  "seed_namespace": "p3sf:q1:full:v1"
+}

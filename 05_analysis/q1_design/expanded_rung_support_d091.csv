@@ -1,0 +1,7 @@
+snr_rung,gold_n,gold_faint_only,gold_matched,gold_plus_silver_n,gold_plus_silver_faint_only,gold_plus_silver_matched,d091_disposition
+5,10,10,10,14,14,14,FINAL_RETAINED
+10,10,8,8,14,12,12,FINAL_RETAINED
+15,10,3,3,14,5,5,UNDERPOWERED_EXCLUDED
+20,10,1,1,14,2,2,UNDERPOWERED_EXCLUDED
+30,10,0,0,14,1,0,UNDERPOWERED_EXCLUDED
+40,10,0,0,14,0,0,UNREACHABLE_REMOVED

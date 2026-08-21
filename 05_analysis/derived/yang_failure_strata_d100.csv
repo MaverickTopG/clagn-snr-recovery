@@ -1,0 +1,15 @@
+stratum_kind,stratum,n_transitions,n_applicable_rows,n_invalid_rows,invalid_fraction
+instrument_pair,DESI_EDR/SDSS_LEGACY,1,50,50,1.0
+instrument_pair,LAMOST_DR11/SDSS_LEGACY,4,700,560,0.8
+instrument_pair,SDSSV_DR19/SDSS_LEGACY,3,600,429,0.715
+instrument_pair,SDSS_LEGACY/LAMOST_DR11,19,2700,1577,0.5840740740740741
+instrument_pair,SDSS_LEGACY/SDSSV_DR19,5,850,539,0.6341176470588236
+instrument_pair,SDSS_LEGACY/SDSS_LEGACY,9,1350,920,0.6814814814814815
+source_family,Dong2025_SDSS_LAMOST,20,2800,1617,0.5775
+source_family,Green2022,2,400,246,0.615
+source_family,MacLeod2016,1,200,132,0.66
+source_family,Potts2021,3,350,198,0.5657142857142857
+source_family,Ruan2016,2,200,175,0.875
+source_family,Runnoe2016,1,200,169,0.845
+source_family,Yang2025_turn_on,4,650,570,0.8769230769230769
+source_family,Zeltyn2024_SDSSV,8,1450,968,0.6675862068965517

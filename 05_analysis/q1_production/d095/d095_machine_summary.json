@@ -1,0 +1,202 @@
+{
+  "accounting": {
+    "checks": {
+      "aggregate_table_exactly_reconstructed": true,
+      "condition_realizations_8350": true,
+      "conditions_167": true,
+      "fifty_realizations_per_condition_classifier": true,
+      "immutable_raw_checksums_reverified": true,
+      "terminal_classifier_outcomes_25050": true,
+      "terminal_label_domain_complete": true,
+      "three_classifier_rows_per_condition_realization": true,
+      "transition_denominator_identities": true,
+      "transition_table_exactly_reconstructed": true
+    },
+    "counts": {
+      "condition_realizations": 8350,
+      "conditions": 167,
+      "terminal_classifier_outcomes": 25050,
+      "transition_condition_classifier_rows": 501
+    },
+    "status": "PASS"
+  },
+  "bootstrap": {
+    "clusters": "paired transition/object",
+    "draws": 5000,
+    "interval": "percentile 95% CI for paired mean"
+  },
+  "decision": "Q1_SCIENCE_PARTIAL",
+  "green_arm": [
+    {
+      "N_negative": 5,
+      "N_positive": 23,
+      "N_zero": 15,
+      "delta_p_max": 0.98,
+      "delta_p_mean_faint_only_minus_matched": 0.19674418604651164,
+      "delta_p_median_faint_only_minus_matched": 0.02,
+      "delta_p_min": -0.18,
+      "delta_p_q25": 0.0,
+      "delta_p_q75": 0.33,
+      "paired_mean_ci_high": 0.2916279069767442,
+      "paired_mean_ci_low": 0.11348837209302326,
+      "paired_transition_count": 43,
+      "snr": 5
+    },
+    {
+      "N_negative": 3,
+      "N_positive": 17,
+      "N_zero": 5,
+      "delta_p_max": 0.86,
+      "delta_p_mean_faint_only_minus_matched": 0.24480000000000005,
+      "delta_p_median_faint_only_minus_matched": 0.12,
+      "delta_p_min": -0.039999999999999994,
+      "delta_p_q25": 0.0,
+      "delta_p_q75": 0.44,
+      "paired_mean_ci_high": 0.36160000000000003,
+      "paired_mean_ci_low": 0.1408,
+      "paired_transition_count": 25,
+      "snr": 10
+    }
+  ],
+  "green_snr": [
+    {
+      "N_negative": 1,
+      "N_positive": 18,
+      "N_zero": 8,
+      "arm": "faint_only",
+      "common_support_R_snr10": 0.5733333333333334,
+      "common_support_R_snr5": 0.28370370370370374,
+      "common_support_paired_difference_10_minus_5": 0.2896296296296296,
+      "delta_p_max": 0.88,
+      "delta_p_mean_10_minus_5": 0.2896296296296296,
+      "delta_p_median_10_minus_5": 0.12000000000000001,
+      "delta_p_min": -0.02,
+      "delta_p_q25": 0.0,
+      "delta_p_q75": 0.63,
+      "full_supported_R_snr10": 0.5733333333333334,
+      "full_supported_R_snr5": 0.32863636363636367,
+      "full_supported_unpaired_difference_10_minus_5": 0.2446969696969697,
+      "paired_mean_ci_high": 0.4155740740740738,
+      "paired_mean_ci_low": 0.17183333333333334,
+      "paired_transition_count": 27
+    },
+    {
+      "N_negative": 1,
+      "N_positive": 18,
+      "N_zero": 6,
+      "arm": "matched",
+      "common_support_R_snr10": 0.37439999999999996,
+      "common_support_R_snr5": 0.1152,
+      "common_support_paired_difference_10_minus_5": 0.2592,
+      "delta_p_max": 0.96,
+      "delta_p_mean_10_minus_5": 0.2592,
+      "delta_p_median_10_minus_5": 0.18,
+      "delta_p_min": -0.06,
+      "delta_p_q25": 0.0,
+      "delta_p_q75": 0.44,
+      "full_supported_R_snr10": 0.37440000000000007,
+      "full_supported_R_snr5": 0.13209302325581396,
+      "full_supported_unpaired_difference_10_minus_5": 0.2423069767441861,
+      "paired_mean_ci_high": 0.38319999999999993,
+      "paired_mean_ci_low": 0.14400000000000002,
+      "paired_transition_count": 25
+    }
+  ],
+  "mask_contract_incident": {
+    "affected_count_frozen_audit": 6305,
+    "affected_count_reconstructed": 6305,
+    "all_8350_degraded_task_seeds_match_frozen_sha256_construction": true,
+    "degraded_seed_uniqueness": true,
+    "detection_time": "Production QC before any D-094 scientific interpretation or accepted aggregate",
+    "evidence_no_outcome_conditioned_rerun": [
+      "Affected selection is exactly instrument_survey contains SDSS and reconstructs 6305/8412 before classifier labels are consulted.",
+      "Unaffected complement reconstructs 2107 tasks: 2106 LAMOST_DR11 and 1 DESI_EDR.",
+      "Repair audit records seeds_changed=false and matrix_changed=false.",
+      "The rejected attempt stopped at production QC; FULL_Q1_EXECUTION_COMPLETE did not exist until the corrected all-input run passed.",
+      "Every degraded seed independently matches the frozen namespace/base/task identity SHA-256 construction."
+    ],
+    "faint_crn_task_seed_array_identity_across_arms": true,
+    "initial_stop_condition": "50 failed J233602 matched-bright S/N=5 inputs caused all-fit-completed and checksum-completeness QC failure",
+    "rerun_rule": "Invalidate every task selected solely by SDSS/SDSS-V instrument provenance; retain every non-SDSS task; rerun the full affected set without inspecting or selecting classifier outcomes.",
+    "root_cause": "Initial D-094 reader added SDSS survey bitmask rejection although D-089/D-093 froze positive-IVAR-only fitting validity; this removed all Hbeta-window pixels for the affected J233602 native bright endpoint and failed QC.",
+    "unaffected_count_reconstructed": 2107,
+    "unaffected_instrument_counts": {
+      "DESI_EDR": 1,
+      "LAMOST_DR11": 2106
+    }
+  },
+  "yang_failure": {
+    "applicable_unclassifiable": 4456,
+    "inapplicable_by_design": 1300,
+    "interpretation": "Boundary failures dominate; valid nondetections are a source-permitted classifiable zero convention, not a failure.",
+    "nonexclusive_failure_incidence": {
+      "degraded_fit_boundary_failure": 3635,
+      "local_fit_invalidity": 1250,
+      "measurement_unavailable": 32,
+      "native_boundary_failure": 550,
+      "nondetection_semantics": 0
+    },
+    "terminal_priority_categories": {
+      "degraded_fit_boundary_failure": 3387,
+      "inapplicable_by_design": 1300,
+      "local_fit_invalidity": 498,
+      "measurement_unavailable": 21,
+      "native_boundary_failure": 550
+    },
+    "valid_nondetection_semantics_used_in_classifiable_rows": 18
+  },
+  "yang_green_contingency": [
+    {
+      "Green_CL__Yang_CL": 90,
+      "Green_CL__Yang_nonCL": 113,
+      "Green_nonCL__Yang_CL": 160,
+      "Green_nonCL__Yang_nonCL": 250,
+      "N_Green_classifiable_Yang_unclassifiable": 1587,
+      "N_Green_unclassifiable_Yang_classifiable": 30,
+      "N_both_classifiable": 613,
+      "N_both_unclassifiable": 170,
+      "N_total_realization_cells": 2400,
+      "arm": "faint_only",
+      "snr": 5
+    },
+    {
+      "Green_CL__Yang_CL": 71,
+      "Green_CL__Yang_nonCL": 174,
+      "Green_nonCL__Yang_CL": 44,
+      "Green_nonCL__Yang_nonCL": 83,
+      "N_Green_classifiable_Yang_unclassifiable": 978,
+      "N_Green_unclassifiable_Yang_classifiable": 0,
+      "N_both_classifiable": 372,
+      "N_both_unclassifiable": 100,
+      "N_total_realization_cells": 1450,
+      "arm": "faint_only",
+      "snr": 10
+    },
+    {
+      "Green_CL__Yang_CL": 36,
+      "Green_CL__Yang_nonCL": 24,
+      "Green_nonCL__Yang_CL": 224,
+      "Green_nonCL__Yang_nonCL": 411,
+      "N_Green_classifiable_Yang_unclassifiable": 1455,
+      "N_Green_unclassifiable_Yang_classifiable": 23,
+      "N_both_classifiable": 695,
+      "N_both_unclassifiable": 177,
+      "N_total_realization_cells": 2350,
+      "arm": "matched",
+      "snr": 5
+    },
+    {
+      "Green_CL__Yang_CL": 37,
+      "Green_CL__Yang_nonCL": 103,
+      "Green_nonCL__Yang_CL": 81,
+      "Green_nonCL__Yang_nonCL": 221,
+      "N_Green_classifiable_Yang_unclassifiable": 808,
+      "N_Green_unclassifiable_Yang_classifiable": 0,
+      "N_both_classifiable": 442,
+      "N_both_unclassifiable": 100,
+      "N_total_realization_cells": 1350,
+      "arm": "matched",
+      "snr": 10
+    }
+  ]
+}
