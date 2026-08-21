@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.DS_Store
+.ipynb_checkpoints/
+
+# Cloned by 00_scripts/00_make_environment.py, not redistributed here.
+06_fitting/pyqsofit/vendor/
+
+# Survey spectra are retrieved from their originating archives.
+03_spectra/
