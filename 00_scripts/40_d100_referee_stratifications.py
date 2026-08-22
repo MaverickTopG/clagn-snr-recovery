@@ -40,7 +40,7 @@ from p3sf.config import project_root  # noqa: E402
 ROOT = project_root()
 D094 = ROOT / "05_analysis" / "q1_production" / "d094"
 D095 = ROOT / "05_analysis" / "q1_production" / "d095" / "tables"
-D100 = ROOT / "05_analysis" / "manuscript" / "submission_apj"
+D100 = ROOT / "05_analysis" / "derived"
 OUT = D100 / "tables"
 
 PRETTY = {
