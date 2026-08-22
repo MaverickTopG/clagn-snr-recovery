@@ -16,8 +16,11 @@ before the conclusion changes.
 
 Two sweeps are run.
 
-    symmetric   the same f at both rungs. This asks whether the *sign* survives
-                a uniformly understated variance.
+    symmetric   the same f at both rungs. This asks whether the sign reverses
+                under a uniformly understated variance. It does not, over the
+                range tested: the faint-only contrast stays positive through
+                f=24 and reaches zero at f=99, where recovery has collapsed at
+                both rungs. At f=1 it is +0.223.
 
     asymmetric  f applied at S/N 5 only, or more at S/N 5 than at S/N 10. This
                 is the physically motivated direction: the decomposition is
@@ -182,7 +185,7 @@ def main() -> int:
 
     sym = table[table.sweep == "symmetric"]
     print(f"\nsymmetric sweep: minimum mean delta_p over all f and both arms = "
-          f"{sym.mean_delta_p.min():+.4f}  (sign preserved: {bool((sym.mean_delta_p >= 0).all())})")
+          f"{sym.mean_delta_p.min():+.4f}  (no sign reversal: {bool((sym.mean_delta_p >= 0).all())})")
     asym = table[(table.sweep == "asymmetric") & (table.f_at_snr10 == 0.0)]
     for arm in ("faint_only", "matched"):
         a = asym[asym.arm == arm]

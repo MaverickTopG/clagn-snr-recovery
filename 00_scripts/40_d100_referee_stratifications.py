@@ -41,7 +41,7 @@ ROOT = project_root()
 D094 = ROOT / "05_analysis" / "q1_production" / "d094"
 D095 = ROOT / "05_analysis" / "q1_production" / "d095" / "tables"
 D100 = ROOT / "05_analysis" / "derived"
-OUT = D100 / "tables"
+OUT = D100
 
 PRETTY = {
     "SDSS_LEGACY": "SDSS", "SDSSV_DR19": "SDSS-V",
@@ -52,6 +52,27 @@ PRETTY = {
 def pretty_pair(pair: str) -> str:
     bright, faint = pair.split("/")
     return f"{PRETTY.get(bright, bright)}/{PRETTY.get(faint, faint)}"
+
+
+def _read_outcomes() -> pd.DataFrame:
+    """Classifier outcomes ship as CSV in the working tree and parquet publicly."""
+    csv = D094 / "raw" / "classifier_outcomes_d094.csv"
+    if csv.exists():
+        return pd.read_csv(csv)
+    return pd.read_parquet(D094 / "raw" / "classifier_outcomes_d094.parquet")
+
+
+def _read_seed_manifest() -> pd.DataFrame:
+    """Full fit-task manifest where available, else the public seed projection.
+
+    `fit_task_seed_manifest_d094.csv` carries only the five columns this check
+    reads and is verified against the full manifest by stage 44. The full
+    manifest is not redistributed because it records absolute local paths.
+    """
+    full = D094 / "raw" / "fit_task_manifest_d094.csv"
+    if full.exists():
+        return pd.read_csv(full)
+    return pd.read_csv(D094 / "raw" / "fit_task_seed_manifest_d094.csv")
 
 
 def paired_deltas() -> pd.DataFrame:
@@ -153,7 +174,7 @@ def _rung_seed_overlap() -> tuple[int, int]:
     honest: a manifest that silently lost its S/N 10 rows would otherwise pass
     by having nothing left to compare.
     """
-    manifest = pd.read_csv(D094 / "raw" / "fit_task_manifest_d094.csv")
+    manifest = _read_seed_manifest()
     faint = manifest[manifest.task_kind.eq("faint_shared")]
     wide = faint.pivot_table(
         index=["transition_id", "realization"], columns="target_snr",
@@ -163,7 +184,7 @@ def _rung_seed_overlap() -> tuple[int, int]:
 
 
 def yang_failure_strata() -> tuple[pd.DataFrame, pd.DataFrame]:
-    outcomes = pd.read_csv(D094 / "raw" / "classifier_outcomes_d094.csv")
+    outcomes = _read_outcomes()
     manifest = pd.read_csv(D100 / "reference_transition_manifest.csv")
     yang = outcomes[
         outcomes.criterion_id.eq("YANG2024_FINAL") & outcomes.reference_tier.eq("GOLD")
@@ -195,7 +216,7 @@ def yang_boundary_mechanism() -> pd.DataFrame:
     integrated profile whose width falls outside the source FWHM domain. This is
     a re-tabulation of the frozen reason strings; nothing is refitted.
     """
-    outcomes = pd.read_csv(D094 / "raw" / "classifier_outcomes_d094.csv")
+    outcomes = _read_outcomes()
     yang = outcomes[outcomes.criterion_id.eq("YANG2024_FINAL") & outcomes.applicable]
     invalid = yang[~yang.classification.isin(["CL", "NON_CL"])]
     at_bound = invalid.reason.str.contains("PARAMETER_AT_BOUND", regex=False)

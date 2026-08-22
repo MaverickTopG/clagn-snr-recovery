@@ -2,10 +2,10 @@
 
 Code for the analysis associated with:
 
-> Singh, A. "Signal-to-Noise and Classification Protocols Shape the Spectroscopic Recovery of
+> Singh, A. "Signal-to-Noise and Classification Protocols Shape the Spectroscopic Recovery of Published
 > Changing-Look AGN."
 
-This is a curated publication release; its five commits organize the released files and do not
+This is a curated publication release; its commits organize the released files and do not
 reconstruct the original development history.
 
 ## Overview
@@ -80,6 +80,17 @@ It carries the rest-frame 4730-4962 A pixels the Green statistic can reach, for 
 that analysis uses. `00_scripts/43_build_green_window_input.py` builds it from the full product and
 aborts unless every epoch rebins bitwise-identically from the extract; Stage 42 produces
 byte-identical output from either input.
+
+The stage 40 rung-independence check has the same shape. It reads the full fit-task manifest,
+which records absolute paths from the machine that ran the campaign and is therefore not shipped.
+A five-column projection of the rows that check reads is shipped instead:
+
+```
+05_analysis/q1_production/d094/raw/fit_task_seed_manifest_d094.csv   230 KB
+```
+
+`00_scripts/44_build_public_seed_manifest.py` builds it and aborts unless the overlap count and
+denominator match those computed from the full manifest.
 
 **Survey spectra** are needed only to rerun the 8412-fit production campaign
 (`00_scripts/34_execute_full_q1.py`, many hours). They are not redistributed. Retrieve each from
