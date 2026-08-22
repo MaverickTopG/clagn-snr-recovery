@@ -40,7 +40,7 @@ from p3sf.config import project_root  # noqa: E402
 ROOT = project_root()
 D094 = ROOT / "05_analysis" / "q1_production" / "d094"
 D095 = ROOT / "05_analysis" / "q1_production" / "d095" / "tables"
-D100 = ROOT / "05_analysis" / "derived"
+D100 = ROOT / "05_analysis" / "manuscript" / "submission_apj"
 OUT = D100 / "tables"
 
 PRETTY = {
@@ -186,6 +186,38 @@ def yang_failure_strata() -> tuple[pd.DataFrame, pd.DataFrame]:
     return summarise("instrument_pair", "instrument_pair"), summarise("source_family", "source_family")
 
 
+def yang_boundary_mechanism() -> pd.DataFrame:
+    """Split applicable-invalid rows by which boundary mechanism was recorded.
+
+    The stored flag for a parameter at a bound merges scale, width and centroid
+    contacts, so those three cannot be told apart without refitting. The two
+    *mechanisms* can be: a fitted parameter pinned at an allowed limit, and an
+    integrated profile whose width falls outside the source FWHM domain. This is
+    a re-tabulation of the frozen reason strings; nothing is refitted.
+    """
+    outcomes = pd.read_csv(D094 / "raw" / "classifier_outcomes_d094.csv")
+    yang = outcomes[outcomes.criterion_id.eq("YANG2024_FINAL") & outcomes.applicable]
+    invalid = yang[~yang.classification.isin(["CL", "NON_CL"])]
+    at_bound = invalid.reason.str.contains("PARAMETER_AT_BOUND", regex=False)
+    width_out = invalid.reason.str.contains("WIDTH_OUTSIDE", regex=False)
+    rows = [
+        ("parameter_at_bound_only", int((at_bound & ~width_out).sum())),
+        ("width_domain_only", int((~at_bound & width_out).sum())),
+        ("both_mechanisms", int((at_bound & width_out).sum())),
+        ("neither_mechanism", int((~at_bound & ~width_out).sum())),
+    ]
+    frame = pd.DataFrame(rows, columns=["mechanism", "n_rows"])
+    assert int(frame.n_rows.sum()) == len(invalid) == 4456
+    # Cross-cutting count: rows carrying at least one boundary diagnostic flag,
+    # regardless of which mutually exclusive failure category they were assigned.
+    frame = pd.concat(
+        [frame, pd.DataFrame([("any_boundary_flag", int((at_bound | width_out).sum()))],
+                             columns=["mechanism", "n_rows"])],
+        ignore_index=True,
+    )
+    return frame
+
+
 def latex_table(frame: pd.DataFrame, path: Path, caption: str, label: str) -> None:
     lines = [
         r"\begin{deluxetable*}{llrrrr}",
@@ -230,6 +262,9 @@ def main() -> int:
 
     mc = monte_carlo_contribution(frame)
     mc.to_csv(OUT / "aggregate_monte_carlo_error_d100.csv", index=False)
+
+    mechanism = yang_boundary_mechanism()
+    mechanism.to_csv(OUT / "yang_boundary_mechanism_d100.csv", index=False)
 
     by_instrument, by_family = yang_failure_strata()
     yang = pd.concat([by_instrument, by_family], ignore_index=True)

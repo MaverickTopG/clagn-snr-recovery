@@ -59,13 +59,27 @@ minutes and reproduce every number the paper reports.
 
 Two things are deliberately not shipped, and each is needed only for a fuller rerun.
 
-**Per-spectrum fit results** (`spectrum_fit_results_d094.parquet`, 674 MB) back the Green
+**Per-spectrum fit results** (`spectrum_fit_results_d094.parquet`, 675 MB) back the Green
 decomposition audit and the raw-product checksum test. Both are skipped when it is absent.
-Retrieve it from the dataset and place it at:
+The file is too large to ship here and is **not** part of the Zenodo dataset; it is produced by
+rerunning the production campaign (`00_scripts/34_execute_full_q1.py`). If you have it, place it at:
 
 ```
 05_analysis/q1_production/d094/raw/spectrum_fit_results_d094.parquet
 ```
+
+The one analysis that needs those per-pixel arrays, the Green decomposition variance sensitivity
+(`00_scripts/42_green_decomposition_variance_sensitivity.py`), does not require it. A compact
+extract is shipped instead:
+
+```
+05_analysis/q1_production/d094/raw/green_pixel_window_d094.parquet   13 MB
+```
+
+It carries the rest-frame 4730-4962 A pixels the Green statistic can reach, for the 6994 epochs
+that analysis uses. `00_scripts/43_build_green_window_input.py` builds it from the full product and
+aborts unless every epoch rebins bitwise-identically from the extract; Stage 42 produces
+byte-identical output from either input.
 
 **Survey spectra** are needed only to rerun the 8412-fit production campaign
 (`00_scripts/34_execute_full_q1.py`, many hours). They are not redistributed. Retrieve each from
@@ -77,10 +91,8 @@ spectrum identifier and the expected SHA-256 for all 116 endpoints, then place t
 03_spectra/raw_q1_d093/{sdss_legacy,sdssv_dr19,lamost_dr11,desi_edr}/
 ```
 
-| Zenodo file | Repository destination |
-|---|---|
-| `spectrum_fit_results_d094.parquet` | `05_analysis/q1_production/d094/raw/` |
-| everything else | already present in this repository |
+Everything the Zenodo dataset contains is already present in this repository; nothing needs to be
+retrieved from it to reproduce the reported numbers.
 
 ## Tests
 
