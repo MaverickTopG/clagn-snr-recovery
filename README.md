@@ -25,7 +25,10 @@ Recovery is aggregated with the transition, not the realization, as the independ
 Reproducibility dataset, including the reference manifest, endpoint identifiers, condition
 matrix, stored classification outcomes and transition-level estimands:
 
-https://doi.org/10.5281/zenodo.22022007
+https://doi.org/10.5281/zenodo.22022006
+
+That is the concept DOI and always resolves to the newest version. Version 1.1.1, which matches
+this release, is https://doi.org/10.5281/zenodo.22053129.
 
 Survey spectra are not redistributed. They are retrieved from SDSS, SDSS-V, LAMOST and DESI
 using the immutable identifiers in `endpoint_bindings.csv` in that dataset.
@@ -142,10 +145,11 @@ Please cite both the paper and the dataset:
 ```
 @misc{singh2026dataset,
   author = {Singh, Ayansh},
-  title  = {Reproducibility Dataset for: Signal-to-Noise and Classification Protocols
-            Shape the Spectroscopic Recovery of Changing-Look AGN},
+  title  = {Reproducibility package for: Signal-to-Noise and Classification Protocols
+            Shape the Spectroscopic Recovery of Published Changing-Look AGN},
   year   = {2026},
-  doi    = {10.5281/zenodo.22022007}
+  version = {1.1.1},
+  doi    = {10.5281/zenodo.22053129}
 }
 ```
 
