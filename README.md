@@ -57,7 +57,14 @@ uv run python 00_scripts/37_d099_transition_level_disagreement.py
 uv run python 00_scripts/40_d100_referee_stratifications.py
 uv run python 00_scripts/45_three_state_decomposition.py
 uv run python 00_scripts/46_common_applicability.py
+uv run python 00_scripts/48_median_and_continuum_diagnostics.py
 ```
+
+Stage 48 reports the resampling spread of the transition-level medians, showing them to be much
+less well determined than the means, and summarizes a line-free continuum S/N diagnostic for the
+prespecified H-beta-window metric. Its continuum half remeasures the archival endpoint spectra,
+which are retrieved from the survey archives rather than shipped, so on a public checkout that half
+is skipped and the committed summary table stands.
 
 Stages 45 and 46 produce the three-state outcome decomposition, the operational recovery yield
 `Y`, the fit-validity baseline and the common-applicability robustness check. Between them they

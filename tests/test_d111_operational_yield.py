@@ -89,3 +89,36 @@ def test_public_validity_flags_reproduce_the_native_baseline():
     assert len(native) == 62
     assert int((~native.yang_fit_valid).sum()) == 19
     assert bool(frame.green_preprocessing_valid.all())
+
+
+def test_median_is_less_well_determined_than_the_mean():
+    """The manuscript must not quote medians as if they were precise."""
+    frame = pd.read_csv(TABLES / "paired_median_uncertainty_d094.csv")
+    assert len(frame) == 2
+    assert (frame.median_ci_width > frame.mean_ci_width).all()
+    faint = frame[frame.arm.eq("Faint-only")].iloc[0]
+    # The faint-only median interval reaches zero; the mean interval does not.
+    assert faint.median_ci_low == 0.0
+    assert faint.mean_ci_low > 0.1
+
+
+def test_continuum_snr_tracks_but_does_not_reproduce_support():
+    """Strong correlation AND non-negligible boundary sensitivity: report both."""
+    frame = pd.read_csv(TABLES / "continuum_snr_summary_d094.csv")
+    assert len(frame) == 2
+    assert (frame.pearson_r > 0.93).all() and (frame.spearman_rho > 0.91).all()
+    # Support membership is not invariant, and less so at the upper rung.
+    assert (frame.support_disagree_snr5 > 0).all()
+    assert (frame.support_disagree_snr10 > frame.support_disagree_snr5).all()
+
+
+MANUSCRIPT = ROOT / "05_analysis" / "manuscript" / "submission_apj" / "manuscript.tex"
+
+
+@pytest.mark.skipif(not MANUSCRIPT.exists(), reason="manuscript source is not part of the code release")
+def test_manuscript_states_the_specificity_boundary():
+    manuscript = MANUSCRIPT.read_text()
+    assert "cannot estimate specificity" in manuscript
+    # The honest concession, not the wrong claim that the framework catches it.
+    assert "would score a recovery fraction and an operational yield of one" in manuscript
+    assert "always-CL classifier would be caught" not in manuscript
