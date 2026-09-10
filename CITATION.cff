@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 title: Spectroscopic Recovery of Changing-Look AGN
-version: 1.1.2
+version: 1.2.0
 abstract: >-
   Analysis code for a counterfactual experiment measuring how spectroscopic
   signal-to-noise and the operational classification protocol affect recovery of

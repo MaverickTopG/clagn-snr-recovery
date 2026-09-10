@@ -55,7 +55,13 @@ uv run python 00_scripts/35_analyze_full_q1.py
 uv run python 00_scripts/36_d095_q1_scientific_stress_test.py
 uv run python 00_scripts/37_d099_transition_level_disagreement.py
 uv run python 00_scripts/40_d100_referee_stratifications.py
+uv run python 00_scripts/45_three_state_decomposition.py
+uv run python 00_scripts/46_common_applicability.py
 ```
+
+Stages 45 and 46 produce the three-state outcome decomposition, the operational recovery yield
+`Y`, the fit-validity baseline and the common-applicability robustness check. Between them they
+back Table 3, Figure 5 and the two appendix tables that accompany them.
 
 These read `05_analysis/q1_production/` and write to `05_analysis/derived/`. They finish in
 minutes and reproduce every number the paper reports.
@@ -94,6 +100,15 @@ A five-column projection of the rows that check reads is shipped instead:
 
 `00_scripts/44_build_public_seed_manifest.py` builds it and aborts unless the overlap count and
 denominator match those computed from the full manifest.
+
+The fit-validity baseline needs the same product for four flag columns. Those are shipped as:
+
+```
+05_analysis/q1_production/d094/raw/fit_validity_flags_d094.csv   236 KB
+```
+
+`00_scripts/47_build_public_fit_validity_flags.py` builds it and aborts unless the validity summary
+is unchanged; stage 45 falls back to it and emits byte-identical output either way.
 
 **Survey spectra** are needed only to rerun the 8412-fit production campaign
 (`00_scripts/34_execute_full_q1.py`, many hours). They are not redistributed. Retrieve each from

@@ -1,0 +1,6 @@
+spectra,target_snr,n_fits,yang_valid_fraction,green_valid_fraction
+Native bright (undegraded),native,62,0.6935483870967742,1.0
+Degraded faint,5,2600,0.405,1.0
+Degraded faint,10,1650,0.44727272727272727,1.0
+Degraded bright (matched),5,2550,0.7129411764705882,1.0
+Degraded bright (matched),10,1550,0.7619354838709678,1.0
