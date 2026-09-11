@@ -2,8 +2,8 @@
 
 Code for the analysis associated with:
 
-> Singh, A. "Signal-to-Noise and Classification Protocols Shape the Spectroscopic Recovery of Published
-> Changing-Look AGN."
+> Singh, A. "Operational Recovery of Changing-Look AGN in Repeat Spectroscopy: Classifier Validity,
+> Three-State Outcomes, and Signal-to-Noise Dependence."
 
 This is a curated publication release; its commits organize the released files and do not
 reconstruct the original development history.
@@ -129,6 +129,33 @@ spectrum identifier and the expected SHA-256 for all 116 endpoints, then place t
 
 Everything the Zenodo dataset contains is already present in this repository; nothing needs to be
 retrieved from it to reproduce the reported numbers.
+
+### Figures and tables
+
+`00_scripts/50_make_figures_and_tables.py` renders every figure and generates every numerical table
+in the paper from the outputs above, writing them to `05_analysis/manuscript_assets/` (ignored by
+git). Run it after the analysis stages:
+
+```
+uv run python 00_scripts/50_make_figures_and_tables.py
+```
+
+Figure 2 shows one transition, chosen by an outcome-blind rule, and is drawn from the per-spectrum fit
+archive and the two archival endpoint spectra, neither of which is shipped. A small extract is shipped
+instead:
+
+```
+05_analysis/q1_production/d094/raw/figure2_selection_d094.csv
+05_analysis/q1_production/d094/raw/figure2_example_arrays_d094.csv
+05_analysis/q1_production/d094/raw/figure2_example_meta_d094.csv
+```
+
+It holds the native faint-epoch S/N of the 27 paired transitions, so the selection rule is re-executed
+rather than assumed, and the five plotted series for the selected transition over rest-frame
+4600-5200 A. The archival spectra are SDSS public data-release products.
+`00_scripts/49_build_figure2_extract.py` builds the extract from the full product and aborts unless
+every value round-trips bit-for-bit. Figure A1 reads the host-shape pilot outcomes in
+`05_analysis/host_shape_pilot/execution/`. Table 2 is descriptive and is not generated.
 
 ## Tests
 

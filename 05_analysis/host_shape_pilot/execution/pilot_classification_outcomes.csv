@@ -1,0 +1,161 @@
+cell_id,pilot_arm_id,template_id,requested_f_added_star,criterion,support_status,label,statistic,threshold,reason
+HC001,DIAG_J233_FAINT,NONE,0.0,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,CL,0.0,0.3,Yang faint non-detection=0 protocol
+HC001,DIAG_J233_FAINT,NONE,0.0,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC001,DIAG_J233_FAINT,NONE,0.0,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC001,DIAG_J233_FAINT,NONE,0.0,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC002,DIAG_J233_FAINT,XSL_H1,0.1,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,CL,0.0,0.3,Yang faint non-detection=0 protocol
+HC002,DIAG_J233_FAINT,XSL_H1,0.1,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC002,DIAG_J233_FAINT,XSL_H1,0.1,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC002,DIAG_J233_FAINT,XSL_H1,0.1,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC003,DIAG_J233_FAINT,XSL_H2,0.1,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,CL,0.0,0.3,Yang faint non-detection=0 protocol
+HC003,DIAG_J233_FAINT,XSL_H2,0.1,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC003,DIAG_J233_FAINT,XSL_H2,0.1,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC003,DIAG_J233_FAINT,XSL_H2,0.1,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC004,DIAG_J233_FAINT,XSL_H3,0.1,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,CL,0.0,0.3,Yang faint non-detection=0 protocol
+HC004,DIAG_J233_FAINT,XSL_H3,0.1,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC004,DIAG_J233_FAINT,XSL_H3,0.1,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC004,DIAG_J233_FAINT,XSL_H3,0.1,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC005,DIAG_J233_FAINT,XSL_H1,0.5,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,CL,0.0,0.3,Yang faint non-detection=0 protocol
+HC005,DIAG_J233_FAINT,XSL_H1,0.5,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC005,DIAG_J233_FAINT,XSL_H1,0.5,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC005,DIAG_J233_FAINT,XSL_H1,0.5,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC006,DIAG_J233_FAINT,XSL_H2,0.5,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,CL,0.0,0.3,Yang faint non-detection=0 protocol
+HC006,DIAG_J233_FAINT,XSL_H2,0.5,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC006,DIAG_J233_FAINT,XSL_H2,0.5,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC006,DIAG_J233_FAINT,XSL_H2,0.5,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC007,DIAG_J233_FAINT,XSL_H3,0.5,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,CL,0.0,0.3,Yang faint non-detection=0 protocol
+HC007,DIAG_J233_FAINT,XSL_H3,0.5,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC007,DIAG_J233_FAINT,XSL_H3,0.5,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC007,DIAG_J233_FAINT,XSL_H3,0.5,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC008,DIAG_J233_FAINT,XSL_H1,0.85,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,CL,0.0,0.3,Yang faint non-detection=0 protocol
+HC008,DIAG_J233_FAINT,XSL_H1,0.85,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC008,DIAG_J233_FAINT,XSL_H1,0.85,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC008,DIAG_J233_FAINT,XSL_H1,0.85,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC009,DIAG_J233_FAINT,XSL_H2,0.85,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,CL,0.0,0.3,Yang faint non-detection=0 protocol
+HC009,DIAG_J233_FAINT,XSL_H2,0.85,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC009,DIAG_J233_FAINT,XSL_H2,0.85,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC009,DIAG_J233_FAINT,XSL_H2,0.85,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC010,DIAG_J233_FAINT,XSL_H3,0.85,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,CL,0.0,0.3,Yang faint non-detection=0 protocol
+HC010,DIAG_J233_FAINT,XSL_H3,0.85,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC010,DIAG_J233_FAINT,XSL_H3,0.85,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC010,DIAG_J233_FAINT,XSL_H3,0.85,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC011,DIAG_J161_BRIGHT,NONE,0.0,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,non-CL,0.9156086515632772,0.3,Yang faint non-detection=0 protocol
+HC011,DIAG_J161_BRIGHT,NONE,0.0,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC011,DIAG_J161_BRIGHT,NONE,0.0,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC011,DIAG_J161_BRIGHT,NONE,0.0,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC012,DIAG_J161_BRIGHT,XSL_H1,0.1,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,non-CL,0.9090791966652945,0.3,Yang faint non-detection=0 protocol
+HC012,DIAG_J161_BRIGHT,XSL_H1,0.1,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC012,DIAG_J161_BRIGHT,XSL_H1,0.1,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC012,DIAG_J161_BRIGHT,XSL_H1,0.1,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC013,DIAG_J161_BRIGHT,XSL_H2,0.1,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,non-CL,1.0423190156468751,0.3,Yang faint non-detection=0 protocol
+HC013,DIAG_J161_BRIGHT,XSL_H2,0.1,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC013,DIAG_J161_BRIGHT,XSL_H2,0.1,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC013,DIAG_J161_BRIGHT,XSL_H2,0.1,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC014,DIAG_J161_BRIGHT,XSL_H3,0.1,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,non-CL,0.8265003426919677,0.3,Yang faint non-detection=0 protocol
+HC014,DIAG_J161_BRIGHT,XSL_H3,0.1,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC014,DIAG_J161_BRIGHT,XSL_H3,0.1,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC014,DIAG_J161_BRIGHT,XSL_H3,0.1,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC015,DIAG_J161_BRIGHT,XSL_H1,0.5,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,non-CL,1.0327589514745121,0.3,Yang faint non-detection=0 protocol
+HC015,DIAG_J161_BRIGHT,XSL_H1,0.5,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC015,DIAG_J161_BRIGHT,XSL_H1,0.5,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC015,DIAG_J161_BRIGHT,XSL_H1,0.5,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC016,DIAG_J161_BRIGHT,XSL_H2,0.5,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,non-CL,0.8268725634471523,0.3,Yang faint non-detection=0 protocol
+HC016,DIAG_J161_BRIGHT,XSL_H2,0.5,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC016,DIAG_J161_BRIGHT,XSL_H2,0.5,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC016,DIAG_J161_BRIGHT,XSL_H2,0.5,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC017,DIAG_J161_BRIGHT,XSL_H3,0.5,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,non-CL,0.5941079582298283,0.3,Yang faint non-detection=0 protocol
+HC017,DIAG_J161_BRIGHT,XSL_H3,0.5,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC017,DIAG_J161_BRIGHT,XSL_H3,0.5,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC017,DIAG_J161_BRIGHT,XSL_H3,0.5,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC018,DIAG_J161_BRIGHT,XSL_H1,0.85,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,CL,0.24083631573412848,0.3,Yang faint non-detection=0 protocol
+HC018,DIAG_J161_BRIGHT,XSL_H1,0.85,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC018,DIAG_J161_BRIGHT,XSL_H1,0.85,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC018,DIAG_J161_BRIGHT,XSL_H1,0.85,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC019,DIAG_J161_BRIGHT,XSL_H2,0.85,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,non-CL,0.3760838136197801,0.3,Yang faint non-detection=0 protocol
+HC019,DIAG_J161_BRIGHT,XSL_H2,0.85,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC019,DIAG_J161_BRIGHT,XSL_H2,0.85,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC019,DIAG_J161_BRIGHT,XSL_H2,0.85,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC020,DIAG_J161_BRIGHT,XSL_H3,0.85,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,non-CL,0.47354556918056057,0.3,Yang faint non-detection=0 protocol
+HC020,DIAG_J161_BRIGHT,XSL_H3,0.85,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC020,DIAG_J161_BRIGHT,XSL_H3,0.85,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC020,DIAG_J161_BRIGHT,XSL_H3,0.85,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC021,DIAG_J161_FAINT,NONE,0.0,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,non-CL,0.9156086515632772,0.3,Yang faint non-detection=0 protocol
+HC021,DIAG_J161_FAINT,NONE,0.0,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC021,DIAG_J161_FAINT,NONE,0.0,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC021,DIAG_J161_FAINT,NONE,0.0,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC022,DIAG_J161_FAINT,XSL_H1,0.1,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,non-CL,0.9661282814018577,0.3,Yang faint non-detection=0 protocol
+HC022,DIAG_J161_FAINT,XSL_H1,0.1,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC022,DIAG_J161_FAINT,XSL_H1,0.1,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC022,DIAG_J161_FAINT,XSL_H1,0.1,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC023,DIAG_J161_FAINT,XSL_H2,0.1,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,non-CL,0.9969639355750259,0.3,Yang faint non-detection=0 protocol
+HC023,DIAG_J161_FAINT,XSL_H2,0.1,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC023,DIAG_J161_FAINT,XSL_H2,0.1,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC023,DIAG_J161_FAINT,XSL_H2,0.1,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC024,DIAG_J161_FAINT,XSL_H3,0.1,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,non-CL,1.0839513960859903,0.3,Yang faint non-detection=0 protocol
+HC024,DIAG_J161_FAINT,XSL_H3,0.1,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC024,DIAG_J161_FAINT,XSL_H3,0.1,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC024,DIAG_J161_FAINT,XSL_H3,0.1,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC025,DIAG_J161_FAINT,XSL_H1,0.5,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,non-CL,1.0315847288391697,0.3,Yang faint non-detection=0 protocol
+HC025,DIAG_J161_FAINT,XSL_H1,0.5,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC025,DIAG_J161_FAINT,XSL_H1,0.5,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC025,DIAG_J161_FAINT,XSL_H1,0.5,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC026,DIAG_J161_FAINT,XSL_H2,0.5,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,non-CL,1.3881070865348322,0.3,Yang faint non-detection=0 protocol
+HC026,DIAG_J161_FAINT,XSL_H2,0.5,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC026,DIAG_J161_FAINT,XSL_H2,0.5,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC026,DIAG_J161_FAINT,XSL_H2,0.5,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC027,DIAG_J161_FAINT,XSL_H3,0.5,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,non-CL,0.9008838930427179,0.3,Yang faint non-detection=0 protocol
+HC027,DIAG_J161_FAINT,XSL_H3,0.5,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC027,DIAG_J161_FAINT,XSL_H3,0.5,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC027,DIAG_J161_FAINT,XSL_H3,0.5,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC028,DIAG_J161_FAINT,XSL_H1,0.85,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,non-CL,4.333200009016945,0.3,Yang faint non-detection=0 protocol
+HC028,DIAG_J161_FAINT,XSL_H1,0.85,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC028,DIAG_J161_FAINT,XSL_H1,0.85,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC028,DIAG_J161_FAINT,XSL_H1,0.85,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC029,DIAG_J161_FAINT,XSL_H2,0.85,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,non-CL,1.8802925294373767,0.3,Yang faint non-detection=0 protocol
+HC029,DIAG_J161_FAINT,XSL_H2,0.85,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC029,DIAG_J161_FAINT,XSL_H2,0.85,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC029,DIAG_J161_FAINT,XSL_H2,0.85,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC030,DIAG_J161_FAINT,XSL_H3,0.85,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,CL,0.0,0.3,Yang faint non-detection=0 protocol
+HC030,DIAG_J161_FAINT,XSL_H3,0.85,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC030,DIAG_J161_FAINT,XSL_H3,0.85,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC030,DIAG_J161_FAINT,XSL_H3,0.85,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC031,PAIR_J161_FAINT_ANCHORED,NONE,0.0,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,non-CL,0.9156086515632772,0.3,Yang faint non-detection=0 protocol
+HC031,PAIR_J161_FAINT_ANCHORED,NONE,0.0,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC031,PAIR_J161_FAINT_ANCHORED,NONE,0.0,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC031,PAIR_J161_FAINT_ANCHORED,NONE,0.0,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC032,PAIR_J161_FAINT_ANCHORED,XSL_H1,0.1,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,non-CL,0.8022173925879901,0.3,Yang faint non-detection=0 protocol
+HC032,PAIR_J161_FAINT_ANCHORED,XSL_H1,0.1,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC032,PAIR_J161_FAINT_ANCHORED,XSL_H1,0.1,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC032,PAIR_J161_FAINT_ANCHORED,XSL_H1,0.1,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC033,PAIR_J161_FAINT_ANCHORED,XSL_H2,0.1,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,non-CL,1.0022108364978577,0.3,Yang faint non-detection=0 protocol
+HC033,PAIR_J161_FAINT_ANCHORED,XSL_H2,0.1,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC033,PAIR_J161_FAINT_ANCHORED,XSL_H2,0.1,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC033,PAIR_J161_FAINT_ANCHORED,XSL_H2,0.1,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC034,PAIR_J161_FAINT_ANCHORED,XSL_H3,0.1,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,non-CL,1.2025065490637032,0.3,Yang faint non-detection=0 protocol
+HC034,PAIR_J161_FAINT_ANCHORED,XSL_H3,0.1,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC034,PAIR_J161_FAINT_ANCHORED,XSL_H3,0.1,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC034,PAIR_J161_FAINT_ANCHORED,XSL_H3,0.1,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC035,PAIR_J161_FAINT_ANCHORED,XSL_H1,0.5,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,non-CL,1.0303705307098943,0.3,Yang faint non-detection=0 protocol
+HC035,PAIR_J161_FAINT_ANCHORED,XSL_H1,0.5,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC035,PAIR_J161_FAINT_ANCHORED,XSL_H1,0.5,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC035,PAIR_J161_FAINT_ANCHORED,XSL_H1,0.5,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC036,PAIR_J161_FAINT_ANCHORED,XSL_H2,0.5,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,non-CL,1.1752449209370903,0.3,Yang faint non-detection=0 protocol
+HC036,PAIR_J161_FAINT_ANCHORED,XSL_H2,0.5,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC036,PAIR_J161_FAINT_ANCHORED,XSL_H2,0.5,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC036,PAIR_J161_FAINT_ANCHORED,XSL_H2,0.5,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC037,PAIR_J161_FAINT_ANCHORED,XSL_H3,0.5,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,non-CL,0.7450027263577911,0.3,Yang faint non-detection=0 protocol
+HC037,PAIR_J161_FAINT_ANCHORED,XSL_H3,0.5,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC037,PAIR_J161_FAINT_ANCHORED,XSL_H3,0.5,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC037,PAIR_J161_FAINT_ANCHORED,XSL_H3,0.5,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC038,PAIR_J161_FAINT_ANCHORED,XSL_H1,0.85,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,non-CL,1.3015696948579554,0.3,Yang faint non-detection=0 protocol
+HC038,PAIR_J161_FAINT_ANCHORED,XSL_H1,0.85,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC038,PAIR_J161_FAINT_ANCHORED,XSL_H1,0.85,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC038,PAIR_J161_FAINT_ANCHORED,XSL_H1,0.85,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC039,PAIR_J161_FAINT_ANCHORED,XSL_H2,0.85,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,non-CL,0.38266661155875487,0.3,Yang faint non-detection=0 protocol
+HC039,PAIR_J161_FAINT_ANCHORED,XSL_H2,0.85,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC039,PAIR_J161_FAINT_ANCHORED,XSL_H2,0.85,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC039,PAIR_J161_FAINT_ANCHORED,XSL_H2,0.85,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC040,PAIR_J161_FAINT_ANCHORED,XSL_H3,0.85,yang_2024_flux_ratio,SOURCE_RULE_FROZEN_D020_D021,CL,0.0,0.3,Yang faint non-detection=0 protocol
+HC040,PAIR_J161_FAINT_ANCHORED,XSL_H3,0.85,guo_quick_screen,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,"source rule named, but exact pilot max-flux implementation is not frozen"
+HC040,PAIR_J161_FAINT_ANCHORED,XSL_H3,0.85,macleod_green,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen
+HC040,PAIR_J161_FAINT_ANCHORED,XSL_H3,0.85,potts_villforth,DEPENDENCY_NOT_YET_DEFINABLE,unclassifiable,,,exact source implementation not yet frozen

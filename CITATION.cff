@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 title: Spectroscopic Recovery of Changing-Look AGN
-version: 1.3.0
+version: 1.4.0
 abstract: >-
   Analysis code for a counterfactual experiment measuring how spectroscopic
   signal-to-noise and the operational classification protocol affect recovery of
@@ -30,8 +30,8 @@ references:
 preferred-citation:
   type: article
   title: >-
-    Signal-to-Noise and Classification Protocols Shape the Spectroscopic
-    Recovery of Published Changing-Look AGN
+    Operational Recovery of Changing-Look AGN in Repeat Spectroscopy:
+    Classifier Validity, Three-State Outcomes, and Signal-to-Noise Dependence
   authors:
     - family-names: Singh
       given-names: Ayansh
